@@ -1,0 +1,343 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <section class="screen screen--foreign">
+         <div class="container">
+            <div class="screen__col col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="screen__col col-r">
+
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Интернет
+                                                                                                       магазин</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!" class="breadcrumbs__link link-default">Иномарки</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="search search--cars">
+                  <h2 class="search__title title-sm title-sm--short">ПОИСК СРЕДИ 20 000 000 ЗАПЧАСТЕЙ ДЛЯ ИНОМАРОК, ОТЕЧЕСТВЕННЫХ И ГРУЗОВЫХ АВТО</h2>
+                  <div class="search__inner">
+                     <div class="search__form-wrapp search__form-wrapp--full">
+                        <form class="search__form" action="#">
+                           <div class="search__form-field search__form-field--simple">
+                              <input class="search__form-input" type="text" name="" title="Поиск">
+                              <button class="search__form-btn" type="submit">{{ mixins.icon('search') }}</button>
+                              <ul class="search__tags">
+                                 <li>Амортизатор <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                                 </li>
+                                 <li>Камаз <span class="search__tags-remove">{{ mixins.icon('close') }}</span></li>
+                              </ul>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="cars">
+                  <div class="cars__row">
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">A</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/alfa-romeo_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Alfa Romeo</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/audi_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Audi</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">B</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/bmw_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">BMW</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">C</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/chevrolet_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Chevrolet</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/cadillac_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Cadillac</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/chrysler_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Chrysler</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/citroen_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Citroen</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">D</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/daewoo_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Daewoo</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/dodge_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Dodge</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">F</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/fiat_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Fiat</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/ford_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Ford</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">G</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/great-wall_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Great Wall</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">H</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/honda_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Honda</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/hyundai_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Hyundai</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">I</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/infiniti_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Infiniti</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">J</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/jaguar_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Jaguar</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/jeep_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Jeep</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">L</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/land-rover_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Land Rover</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">A</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/alfa-romeo_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Alfa Romeo</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/audi_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Audi</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">B</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/bmw_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">BMW</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">C</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/chevrolet_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Chevrolet</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/cadillac_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Cadillac</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/chrysler_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Chrysler</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/citroen_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Citroen</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">D</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/daewoo_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Daewoo</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/dodge_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Dodge</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">F</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/fiat_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Fiat</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/ford_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name ">Ford</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">G</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/great-wall_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Great Wall</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">H</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/honda_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Honda</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/hyundai_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Hyundai</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">I</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/infiniti_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Infiniti</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">J</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/jaguar_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Jaguar</div>
+                        </a>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/jeep_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Jeep</div>
+                        </a>
+                     </div>
+                     <div class="cars__brand">
+                        <div class="cars__brand-letter">L</div>
+                        <a href="#!" class="cars__brand-item">
+                           <div class="cars__brand-logo">
+                              <img class="cars__brand-img" src="img/logos/land-rover_logo.png" alt="img">
+                           </div>
+                           <div class="cars__brand-name">Land Rover</div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      {% include "partials/_disblock.html" %}
+
+      {% include "partials/_offers-product.html" %}
+
+      {% include "partials/_read.html" %}
+
+      {% include "partials/_about.html" %}
+
+      {% include "partials/_address.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

@@ -1,0 +1,281 @@
+body
+	background: #FFF
+	font-size: 15px
+	font-family: $PR
+	color: $black-light
+	line-height: 1
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+
+.out
+	overflow: hidden
+	
+// TITLES
+.title-lg
+	font-size: 30px
+	font-family: $PR
+	line-height: 1
+	color: $black
+	text-transform: uppercase
+	&--l
+		font-family: $PL
+	&--sb
+		font-family: $PS
+
+.title-md
+	font-size: 25px
+	line-height: 1
+	font-family: $PS
+	color: $black-light
+	text-transform: uppercase
+	&--l
+		font-family: $PL
+		color: #000
+
+.title-sm
+	font-size: 20px
+	line-height: (25/20)
+	font-family: $PR
+	color: $black
+	text-transform: uppercase
+	&--strong
+		font-family: $PS
+		color: $black-light
+	&--short
+		max-width: 600px
+		
+.title-xs
+	font-size: 14px
+	text-transform: uppercase
+	font-family: $PR
+	line-height: (20/14)
+	color: #000000
+
+// links
+.border-b-link
+	border-bottom: 1px solid $border-link-gray
+	transition: all .2s
+	text-decoration: none
+	&:hover
+		border-bottom-color: transparent
+
+.link-default
+	color: #005896
+	border-bottom: 1px solid #005896
+	font-size: 13px
+	text-decoration: none
+	transition: all .2s
+	text-transform: uppercase
+	&:hover
+		border-bottom-color: transparent
+	&--icon
+		position: relative
+		display: inline-block
+		padding-right: 17px
+		border-bottom: none
+		&:hover span
+			border-bottom-color: transparent
+		span
+			color: #005896
+			border-bottom: 1px solid #bfbfbf
+			transition: border-bottom-color .25s
+		.icon
+			position: absolute
+			z-index: 1
+			top: 0
+			right: 0
+			font-size: 12px
+			fill: black
+	&--black
+		color: #000
+		border-bottom-color: #bfbfbf
+		font-family: $PS
+		text-transform: uppercase
+		span
+			color: #000
+			border-bottom-color: #bfbfbf
+		
+		
+// BUTTONS
+.btn
+	display: inline-block
+	padding: 0 15px
+	height: 41px
+	line-height: 41px
+	color: $white
+	font-size: 13px
+	font-family: $PS
+	border-radius: 5px
+	text-transform: uppercase
+	background: #ed691f
+	border: 1px solid #ed691f
+	transition: transform .15s, background .25s
+	text-align: center
+	&:hover
+		color: #ed691f
+		background: #fff
+	&:active
+		transform: translateY(2px)
+		
+.btn-border
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	font-size: 13px
+	font-family: $PS
+	text-align: center
+	text-transform: uppercase
+	color: $black-light
+	padding: 0 19px
+	line-height: 41px
+	height: 41px
+	border: 1px solid #40403e
+	border-radius: 5px
+	text-decoration: none
+	background-color: rgba(255, 255, 255, 0.25)
+	box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+	transition: all .25s, transform .15s
+	&:hover
+		box-shadow: -0.1px 0 0 rgba(14, 30, 46, 0.2)
+		border-color: $orange
+		color: $orange
+	&:hover .icon
+		fill: $orange
+	&:active
+		transform: translateY(2px)
+	.icon
+		display: inline-block
+		vertical-align: middle
+		+tr(fill .25s)
+	&--blue
+		padding: 0 23px
+		color: #005895
+		border-color: #005895
+		
+.btn-edit
+	margin-left: 2px
+	font-size: 16px
+	background-color: transparent
+	
+.btn-more
+	position: relative
+	height: 26px
+	width: 26px
+	border-radius: 5px
+	border: 1px solid #e7e7e7
+	background-color: #f5f5f5
+	transition: transform .15s, background-color .3s
+	&:active
+		transform: translateY(2px)
+	.icon
+		position: relative
+		top: 1px
+		fill: #40403e
+		font-size: 9px
+		
+.act-buttons
+	display: inline-block
+	font-size: 0
+	&__btn
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		background-color: transparent
+		& + &
+			margin-left: 5px
+	&--personal
+		position: absolute
+		right: 0
+		top: 0
+		z-index: 12
+//END BUTTONS
+
+.scroll-next
+	position: absolute
+	bottom: -35px
+	left: 49%
+	border-radius: 12px 12px 0 0
+	background-color: #fff
+	animation: mouse-anim 1s infinite alternate
+	-webkit-tap-highlight-color: transparent
+	
+@keyframes mouse-anim
+	0%
+		bottom: -30px
+	100%
+		bottom: -40px
+		
+// inputs
+.input-default
+	width: 100%
+	line-height: 41px
+	height: 41px
+	font-size: 14px
+	font-family: $PR
+	color: #000
+	background-color: transparent
+	border-bottom: 3px solid #e7e7e7
+	transition: all .3s
+	+placeholder-color(#8a8a89)
+	&:focus
+		background-color: #fff
+		border-bottom-color: #0078bf
+
+.radio-default
+	position: relative
+	display: inline-block
+	label
+		cursor: pointer
+		&::before
+			display: inline-block
+			vertical-align: middle
+			margin-right: 6px
+			width: 20px
+			height: 20px
+			border: 1px solid #d0d0c9
+			background-color: #ffffff
+			border-radius: 50%
+			content: ''
+		&::after
+			display: none
+			position: absolute
+			left: 6px
+			top: 6px
+			z-index: 1
+			content: ''
+			width: 8px
+			height: 8px
+			background-color: #005895
+			border-radius: 50%
+	span
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+	input:checked + label::after
+		display: block
+	input
+		display: none
+		
+// ICONS FILLS FIXES
+.icon
+	display: inline-block
+	vertical-align: middle
+.icon-cancel
+	fill: #ee6d1e
+.icon-mc
+	font-size: 18px
+	
+// tip
+.tip
+	display: inline-block
+	vertical-align: middle
+	margin-right: 5px
+	font-size: 8px
+	width: 12px
+	height: 12px
+	padding: 2px
+	background-color: #ed691f
+	border-radius: 50%
+	color: #ffffff
+	cursor: pointer

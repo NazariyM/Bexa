@@ -1,0 +1,174 @@
+.basket
+	padding: 25px 0 0
+	&__title
+		margin-bottom: 20px
+	&__container
+		max-width: 670px
+		margin: 0 auto
+	&__inn
+		padding-bottom: 60px
+		border-bottom: 1px solid #e7e7e7
+		& + &
+			padding-top: 5px
+			padding-bottom: 45px
+		+clr
+	&__col
+		float: left
+		text-align: center
+		&:nth-child(1)
+			width: 60%
+		&:nth-child(2)
+			width: 40%
+		&--mod
+			&:nth-child(1)
+				width: 65.5%
+			&:nth-child(2)
+				padding-left: 30px
+				width: 34.5%
+	&__form-wrap
+		margin-bottom: 40px
+	&__disc-wrap
+		margin: 35px 0 0
+		+clr
+	&__disc
+		text-align: left
+		&-title
+			margin-bottom: 10px
+		&-inn
+			margin-top: 13px
+			font-size: 0
+		&-col
+			display: inline-block
+			vertical-align: middle
+			&:nth-child(1)
+				width: 45%
+				padding-right: 15px
+			&:nth-child(2)
+				width: 55%
+		&-field
+			max-width: 410px
+			&--captcha
+				position: relative
+				max-width: 205px
+				input
+					width: 205px
+					padding-right: 60px
+		&-captcha
+			position: absolute
+			right: 0
+			top: 15px
+		&-promo
+			width: 100px
+			margin-left: 15px
+			display: inline-block
+			vertical-align: middle
+			color: #005895
+			font-size: 14px
+			line-height: 1.3
+		&-btn
+			vertical-align: middle
+	&__total
+		font-size: 17px
+		text-align: right
+		&-field
+			margin-bottom: 12px
+			color: #8a8a89
+			white-space: nowrap
+		span
+			display: inline-block
+			margin-left: 8px
+			color: #40403e
+	&__data
+		padding: 40px 0 0
+		text-align: center
+		&-log, &-title
+			display: inline-block
+			vertical-align: middle
+		&-top
+			margin-bottom: 35px
+		&-log
+			margin-left: 20px
+			font-size: 17px
+			color: #8a8a89
+			a
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px
+				text-transform: uppercase
+				text-decoration: none
+				color: #8a8a89
+		&-link
+			margin: 0 10px
+			&.is-active
+				color: #40403e
+				border-bottom-color: transparent
+		&-face
+			margin: 15px 0 0
+			font-size: 17px
+			color: #e7e7e7
+			span
+				pointer-events: none
+				user-select: none
+		&-row
+			margin: 0 -15px
+			font-size: 0
+			& + &
+				margin: 20px 0
+		&-field
+			display: inline-block
+			vertical-align: top
+			width: calc(33.33333% - 30px)
+			margin: 0 15px
+		&-field--captcha
+			max-width: 250px
+			width: auto
+			display: block
+			margin-left: 0
+			position: relative
+			text-align: left
+			input
+				width: 100%
+				padding-right: 60px
+		&-captcha
+			position: absolute
+			right: 0
+			top: 15px
+		&-btn
+			margin-top: 20px
+			padding: 0 30px
+	
+	&__delivery
+		padding-top: 50px
+		&-inn
+			margin-top: 35px
+			+clr
+		&-col
+			float: left
+			&:nth-child(1)
+				width: 50%
+				padding-right: 60px
+				.basket__delivery-field
+					margin-bottom: 15px
+			&:nth-child(2)
+				width: 50%
+				.basket__delivery-field
+					margin-bottom: 18px
+			&:nth-child(3)
+				width: 100%
+		&-title
+			text-align: center
+		&-subtitle
+			margin-bottom: 15px
+			text-transform: uppercase
+			font-size: 14px
+			color: #000000
+		&-tip
+			margin: 3px 0 3px 26px
+			color: #005895
+			line-height: (20/14)
+		&-tip--full
+			margin: 15px 0
+	&__payment
+		display: inline-block
+		vertical-align: middle
+		margin-left: 9px

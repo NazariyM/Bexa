@@ -1,0 +1,88 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <section class="screen">
+         <div class="container">
+            <div class="screen__col col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="screen__col col-r">
+
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!" class="breadcrumbs__link link-default">Поиск</a></li>
+                  </ul>
+               </div>
+
+               <div class="search search--default">
+                  <h2 class="search__title title-lg">АВТОЗАПЧАСТИ ДЛЯ BMW В САМАРЕ</h2>
+                  <div class="search__inner">
+                     <div class="search__form-wrapp search__form-wrapp--full">
+                        <form class="search__form" action="#">
+                           <div class="search__form-field search__form-field--simple">
+                              <input class="search__form-input" type="text" name="" title="Поиск">
+                              <button class="search__form-btn" type="submit">{{ mixins.icon('search') }}</button>
+                              <ul class="search__tags">
+                                 <li>Амортизатор <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                                 </li>
+                                 <li>Камаз <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="search__list-wrap">
+                     <ul class="search__list">
+                        <li class="search__list-item"><a class="search__list-link" href="#!">до 1990 г</a></li>
+                        <li class="search__list-item"><a class="search__list-link" href="#!">1990-2000 гг</a></li>
+                        <li class="search__list-item"><a class="search__list-link" href="#!">2000-2010 гг</a></li>
+                        <li class="search__list-item is-active"><a class="search__list-link" href="#!">после 2010 г</a></li>
+                     </ul>
+                     <div class="search__cat">
+                        <div class="search__cat-item">
+                           <div class="search__cat-numb">1</div>
+                           <a href="#!" class="link-default">E81 (2006 - 2012 гг)</a>
+                           <a href="#!" class="link-default">E87 (2003 - 2013 гг)</a>
+                           <a href="#!" class="link-default">F20 (c 2010 г))</a>
+                           <a href="#!" class="link-default">E81 (2006 - 2012 гг)</a>
+                           <a href="#!" class="link-default">E87 (2003 - 2013 гг)</a>
+                           <a href="#!" class="link-default">F20 (c 2010 г))</a>
+                        </div>
+                        <div class="search__cat-item">
+                           <div class="search__cat-numb">2</div>
+                           <a href="#!" class="link-default">E81 (2006 - 2012 гг)</a>
+                           <a href="#!" class="link-default">E87 (2003 - 2013 гг)</a>
+                           <a href="#!" class="link-default">F20 (c 2010 г))</a>
+                           <a href="#!" class="link-default">E81 (2006 - 2012 гг)</a>
+                           <a href="#!" class="link-default">E87 (2003 - 2013 гг)</a>
+                           <a href="#!" class="link-default">F20 (c 2010 г))</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      {% include "partials/_disblock.html" %}
+
+      {% include "partials/_offers-product.html" %}
+
+      {% include "partials/_read.html" %}
+
+      {% include "partials/_about.html" %}
+
+      {% include "partials/_address.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

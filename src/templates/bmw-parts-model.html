@@ -1,0 +1,149 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <div class="screen screen--parts">
+         <div class="container">
+            <div class="col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="col-r">
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Интернет
+                                                                                                       магазин</a></li>
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Иномарки</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!"
+                                                                 class="breadcrumbs__link link-default">BMW</a></li>
+                  </ul>
+               </div>
+
+               <div class="search search--parts">
+                  <h2 class="search__title title-lg title-lg--b">АВТОЗАПЧАСТИ ДЛЯ BMW 1 (F20) 125 d В САМАРЕ</h2>
+                  <div class="search__inner">
+                     <div class="search__form-wrapp search__form-wrapp--full">
+                        <form class="search__form" action="#">
+                           <div class="search__form-field search__form-field--simple">
+                              <input class="search__form-input" type="text" name="" title="Поиск">
+                              <button class="search__form-btn" type="submit">{{ mixins.icon('search') }}</button>
+                              <ul class="search__tags">
+                                 <li>Амортизатор <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                                 </li>
+                                 <li>Камаз <span class="search__tags-remove">{{ mixins.icon('close') }}</span></li>
+                              </ul>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="search__table-wrap">
+                     <table class="pay-table pay-table--model">
+                        <thead class="pay-table__head">
+                        <tr>
+                           <td>Модификация</td>
+                           <td>Год выпуска</td>
+                           <td>Код двигателя</td>
+                           <td>Кузов</td>
+                           <td>Двигатель</td>
+                           <td>Мощность</td>
+                           <td>Топливо</td>
+                        </tr>
+                        </thead>
+                        <tbody class="pay-table__body">
+                        <tr>
+                           <td>
+                              <div class="tip">?</div>
+                              <a class="link-default link-default--black" href="#!">
+                                 <span>ВMW 1 (F20) 125</span>
+                              </a>
+                           </td>
+                           <td>03/2015-</td>
+                           <td>B47 D20 B</td>
+                           <td>Наклонная задняя часть</td>
+                           <td>2л</td>
+                           <td>224</td>
+                           <td>дизель</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="tip">?</div>
+                              <a class="link-default link-default--black" href="#!">
+                                 <span>ВMW 1 (F20) 125</span>
+                              </a>
+                           </td>
+                           <td>03/2015-</td>
+                           <td>B47 D20 B</td>
+                           <td>Наклонная задняя часть</td>
+                           <td>2л</td>
+                           <td>224</td>
+                           <td>дизель</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="tip">?</div>
+                              <a class="link-default link-default--black" href="#!">
+                                 <span>ВMW 1 (F20) 125</span>
+                              </a>
+                           </td>
+                           <td>03/2015-</td>
+                           <td>B47 D20 B</td>
+                           <td>Наклонная задняя часть</td>
+                           <td>2л</td>
+                           <td>224</td>
+                           <td>дизель</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="tip">?</div>
+                              <a class="link-default link-default--black" href="#!">
+                                 <span>ВMW 1 (F20) 125</span>
+                              </a>
+                           </td>
+                           <td>03/2015-</td>
+                           <td>B47 D20 B</td>
+                           <td>Наклонная задняя часть</td>
+                           <td>2л</td>
+                           <td>224</td>
+                           <td>дизель</td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <div class="tip">?</div>
+                              <a class="link-default link-default--black" href="#!">
+                                 <span>ВMW 1 (F20) 125</span>
+                              </a>
+                           </td>
+                           <td>03/2015-</td>
+                           <td>B47 D20 B</td>
+                           <td>Наклонная задняя часть</td>
+                           <td>2л</td>
+                           <td>224</td>
+                           <td>дизель</td>
+                        </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      {% include "partials/_disblock.html" %}
+
+      {% include "partials/_offers-product.html" %}
+
+      {% include "partials/_read.html" %}
+
+      {% include "partials/_about.html" %}
+
+      {% include "partials/_address.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

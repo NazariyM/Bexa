@@ -1,0 +1,93 @@
+$icons: (0:0)
+$icons: map-merge($icons,('dev': (X: -285px, Y:-199px, W: 16px, H: 20px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('gaz': (X: -285px, Y:0px, W: 148px, H: 57px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('kamaz': (X: -285px, Y:-67px, W: 128px, H: 59px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('paz': (X: 0px, Y:-171px, W: 136px, H: 64px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('selhoz': (X: -141px, Y:0px, W: 134px, H: 82px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('spec-tech': (X: 0px, Y:0px, W: 131px, H: 85px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('uaz': (X: -285px, Y:-136px, W: 139px, H: 53px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+$icons: map-merge($icons,('zil': (X: 0px, Y:-95px, W: 141px, H: 66px, TW: 433px, TH: 235px, IMG: '../img/sprite.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+  $icon: map-get($icons, $icon)
+  @return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  width: icon-attr($iconName, W)
+  height: icon-attr($iconName, H)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+  background-image: url(icon-attr($iconName, IMG))
+  $width: icon-attr($iconName, W)
+  $height: icon-attr($iconName, H)
+  width: $width/2
+  height: $height/2
+  $x: icon-attr($iconName, X)
+  $y: icon-attr($iconName, Y)
+  background-position: $x/2 $y/2
+  $tw: icon-attr($iconName, TW)   
+  $th: icon-attr($iconName, TH)
+  background-size: $tw/2 $th/2    
+
+
+@mixin s($i)
+  +sprite($i)
+@mixin sp($i)
+  +sprite-position($i)
+@mixin sr($i)
+  +sprite-retina($i)  
+
+//
+//.icon-dev
+//  width: 16px
+//  height: 20px
+//  background-image: url('../img/sprite.png')
+//  background-position: -285px -199px
+//
+//.icon-gaz
+//  width: 148px
+//  height: 57px
+//  background-image: url('../img/sprite.png')
+//  background-position: -285px 0px
+//
+//.icon-kamaz
+//  width: 128px
+//  height: 59px
+//  background-image: url('../img/sprite.png')
+//  background-position: -285px -67px
+//
+//.icon-paz
+//  width: 136px
+//  height: 64px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -171px
+//
+//.icon-selhoz
+//  width: 134px
+//  height: 82px
+//  background-image: url('../img/sprite.png')
+//  background-position: -141px 0px
+//
+//.icon-spec-tech
+//  width: 131px
+//  height: 85px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px 0px
+//
+//.icon-uaz
+//  width: 139px
+//  height: 53px
+//  background-image: url('../img/sprite.png')
+//  background-position: -285px -136px
+//
+//.icon-zil
+//  width: 141px
+//  height: 66px
+//  background-image: url('../img/sprite.png')
+//  background-position: 0px -95px
+//

@@ -1,0 +1,468 @@
+// discount block
+.disblock
+	padding: 45px 0
+	text-align: center
+	&__descr
+		font-size: 18px
+		margin-top: 5px
+		margin-bottom: 16px
+	&__form-wrapper
+		font-size: 0
+	&__form-field
+		width: 217px
+		display: inline-block
+		vertical-align: middle
+		&:first-child
+			margin-right: 10px
+			+sm
+				display: block
+				margin: 0 auto 10px
+	&__form-input
+		width: 100%
+		font-size: 14px
+		height: 41px
+		line-height: 41px
+		font-family: $PR
+		padding: 0 18px
+		background-color: #fff
+		border: 1px solid #e7e7e7
+		border-radius: 5px
+		color: #000
+		+placeholder-color($gray)
+	&__form-btn
+		width: 100%
+		padding: 0 15px
+		box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+		&:hover
+			box-shadow: none
+
+// BREADCRUMBS
+.breadcrumbs
+	padding-bottom: 15px
+	border-bottom: 1px solid #e7e7e7
+	&__list
+		font-size: 0
+	&__item
+		position: relative
+		display: inline-block
+		vertical-align: top
+		margin-right: 19px
+		&::after
+			display: inline-block
+			position: absolute
+			z-index: 1
+			right: -10px
+			width: 1px
+			height: 11px
+			background-color: #e7e7e7
+			content: ''
+			cursor: default
+			pointer-events: none
+		&:last-child::after
+			display: none
+		&.is-current .breadcrumbs__link
+			border-bottom-color: transparent
+			color: #8a8a89
+			pointer-events: none
+			cursor: default
+	&__link
+		font-size: 14px
+		text-transform: none
+		color: #0078bf
+		border-bottom-color: #bfddef
+
+// POPULAR LINKS
+.pop-links
+	&__inner
+		+clr
+	&__title
+		margin-bottom: 20px
+		color: #000
+		font-family: $PS
+		font-size: 17px
+		line-height: (20/17)
+	&__list
+		float: left
+		width: 25%
+		padding-right: 10px
+		li
+			margin-bottom: 20px
+		a
+			font-size: 15px
+			color: #40403e
+			text-decoration: underline #c2c2c2
+			&:hover
+				text-decoration: none
+		
+// FEED
+.feed
+	padding: 50px 0
+	&__title
+		text-align: center
+	&__inner
+		max-width: 806px
+		margin: 15px auto 0
+		font-size: 0
+		text-align: center
+	&__row
+		margin: 0 -10px
+		& + &
+			padding: 20px 0 40px
+	&__field
+		display: inline-block
+		vertical-align: top
+		width: calc(33.33333% - 20px)
+		margin: 0 10px
+		&--full
+			width: calc(100% - 20px)
+	&__btn
+		padding: 0 20px
+		letter-spacing: 0.05em
+	
+// LIMIT
+.limit
+	&__inner
+		margin-top: 30px
+		+clr
+	&__scale
+		float: left
+		width: 200px
+		height: 44px
+		+clr
+		i
+			float: left
+			width: (100%/33)
+			height: 100%
+			border-right: 3px solid #fff
+			background-color: #e8e8e8
+			&.is-active
+				background-color: #005896
+	&__status
+		float: left
+		margin-left: 15px
+		&-text
+			margin-bottom: 8px
+			font-size: 18px
+			color: #40403e
+			
+// parts
+.parts
+	&__nav
+		margin-bottom: 30px
+		font-size: 0
+		&-link
+			font-size: 15px
+			text-transform: none
+			color: #0078bf
+			border-bottom-color: #0078bf
+			& + &
+				margin-left: 20px
+	&__inn
+		margin: 0 -15px
+		+clr
+	&__col
+		float: left
+		padding: 0 15px
+		width: 50%
+	&__sub-list
+		display: none
+	&__list-title
+		font-size: 15px
+		color: #40403e
+		text-decoration: none
+		&:hover span
+			border-bottom-color: transparent
+		span
+			border-bottom: 1px solid #c2c2c2
+			+tr(border-bottom-color .25s)
+		&.is-active .parts__list-btn::after
+			display: none
+	&__list
+		li
+			padding-bottom: 9px
+	&__list-btn
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin-right: 4px
+		height: 26px
+		width: 26px
+		border-radius: 5px
+		border: 1px solid #e8e8e8
+		background-color: #f5f5f6
+		color: #3f3f3d
+		font-style: normal
+		font-size: 14px
+		text-align: center
+		&::before
+			position: absolute
+			left: 5px
+			top: 11px
+			z-index: 1
+			width: 15px
+			height: 2px
+			background-color: #000
+			content: ''
+		&::after
+			position: absolute
+			left: 11px
+			top: 5px
+			height: 15px
+			width: 2px
+			content: ''
+			background-color: #000
+	&__sub-list
+		padding: 10px 0 0 35px
+		a
+			color: $blue
+			text-decoration: none
+			border-bottom: 1px solid #005896
+			transition: all .2s
+			&:hover
+				border-bottom-color: transparent
+	&__pop
+		li
+			padding-bottom: 20px
+		a
+			font-size: 15px
+			color: #40403e
+			text-transform: none
+			font-family: $PR
+	&__pop-title
+		margin-bottom: 10px
+		font-size: 17px
+		font-family: $PS
+		color: #000
+		
+// cars brand logos
+.cars
+	padding: 40px 0 0
+	&__row
+		font-size: 0
+		&:first-child .cars__brand-item::after
+			position: absolute
+			top: 16px
+			left: -5px
+			z-index: 1
+			height: 65px
+			width: 1px
+			background-color: #e8e8e8
+			content: ''
+			pointer-events: none
+	&__brand
+		display: inline-block
+		vertical-align: top
+		margin-bottom: 28px
+		font-size: 0
+		&-letter
+			font-size: 30px
+			color: #8a8a89
+			font-family: $PL
+		&-item
+			position: relative
+			display: inline-block
+			vertical-align: top
+			margin: 0 5px
+			text-decoration: none
+			text-align: center
+			&:hover .cars__brand-name
+				border-bottom-color: transparent
+			&::before
+				position: absolute
+				top: 16px
+				right: -6px
+				z-index: 1
+				height: 65px
+				width: 1px
+				background-color: #e8e8e8
+				content: ''
+				pointer-events: none
+		&-logo
+			height: 90px
+			width: 81px
+			font-size: 0
+			&::before
+				display: inline-block
+				vertical-align: middle
+				width: 0
+				height: 100%
+				content: ''
+		&-img
+			display: inline-block
+			vertical-align: middle
+		&-name
+			display: inline-block
+			font-size: 14px
+			color: #40403e
+			line-height: (15/14)
+			text-transform: none
+			border-bottom: 1px solid #cfcfce
+			+tr(all .2s)
+			
+// PAY TABLE
+.pay-table
+	overflow: hidden
+	border-radius: 5px
+	box-shadow: 0 3px 3px rgba(14, 30, 46, 0.2)
+	text-align: center
+	font-size: 14px
+	line-height: 1.25
+	color: #40403e
+	td
+		padding:  18px 0
+	&__head
+		background-color: #0078bf
+		td
+			padding: 19px 0
+			text-transform: uppercase
+			font-size: 13px
+			color: #ffffff
+			font-family: $PS
+			border-right: 1px solid #1783c3
+			&:last-child
+				border-right: none
+	&__body
+		tr
+			&:nth-child(2n)
+				background-color: #f5f5f5
+		td
+			vertical-align: middle
+			border-right: 1px solid #e8e8e8
+			&:last-child
+				border-right: none
+	&__has-actions td
+		padding: 18px 0
+	&__act
+		font-size: 0
+	&__act-btn
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		background-color: transparent
+		& + &
+			margin-left: 8px
+		.icon-file
+			fill: darken(#0079c0, 10)
+	&__field .input-default
+		height: 30px
+		line-height: 30px
+		
+	&--search
+		text-align: left
+		.pay-table__head td:nth-child(1)
+			padding: 10px 20px
+		.pay-table__body td
+			padding: 15px 30px
+			border-bottom: 1px solid #e8e8e8
+		a
+			text-transform: none
+			font-size: 16px
+			font-family: $PR
+		.icon
+			position: absolute
+			top: 3px
+			right: -1px
+		.pay-table__body td:nth-child(2) a
+			padding-right: 33px
+		.pay-table__body td:nth-child(2) span
+			border-bottom-color: transparent
+	
+	&--personal
+		td:nth-child(1)
+			width: 4.5%
+		td:nth-child(2)
+			width: 10%
+		td:nth-child(3)
+			width: 16%
+		td:nth-child(4)
+			width: 33%
+		td:nth-child(5)
+			width: 16.5%
+		td:nth-child(6)
+			width: 11.5%
+		
+	&--model
+		td:nth-child(1)
+			width: 9.5%
+		td:nth-child(2)
+			width: 7.5%
+		td:nth-child(3)
+			width: 6%
+		td:nth-child(4)
+			width: 6.5%
+		td:nth-child(5)
+			width: 3.5%
+		td:nth-child(6)
+			width: 3.5%
+		td:nth-child(7)
+			width: 3.5%
+		.link-default--black
+			font-family: $PR
+		.pay-table__body td
+			padding: 12px 0
+	
+	&--basket
+		td:nth-child(1)
+			width: 28%
+			text-align: left
+			padding: 18px 13px
+		td:nth-child(2)
+			width: 17%
+		td:nth-child(3)
+			width: 10%
+		td:nth-child(4)
+			width: 20%
+		td:nth-child(5)
+			width: 10%
+		td:nth-child(6)
+			width: 9%
+		td:nth-child(7)
+			width: 6%
+		.pay-table__has-actions td
+			padding: 11px 0
+		.pay-table__has-actions td:nth-child(1)
+			padding-left: 15px
+
+// drop
+.drop
+	padding: 25px 20px 20px 20px
+	border-radius: 5px
+	border: 1px solid #e7e7e7
+	background-color: #ffffff
+	text-align: left
+	&__descr
+		margin: 8px 0
+		line-height: (24/15)
+		font-size: 15px
+	&__format
+		margin: 10px 0
+		color: #8a8a89
+		font-size: 14px
+	&__loaded
+		margin-bottom: 20px
+		color: #005895
+		font-size: 14px
+	&__status
+		margin-top: 10px
+		color: #8a8a89
+		font-size: 14px
+	&__send-btn
+		width: 100%
+		
+// timer
+.call-timer
+	&__count
+		display: inline-block
+		vertical-align: middle
+		margin-left: 20px
+		font-size: 25px
+		font-family: $PEB
+		
+// payment
+.payment
+	.icon-visa
+		font-size: 15px
+		.icon-mc
+			font-size: 18px
+		.icon + .icon
+			margin-left: 9px

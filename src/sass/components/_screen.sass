@@ -1,0 +1,151 @@
+.screen
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15)
+	padding: 50px 0 55px
+	+md
+		padding: 30px 0 45px
+	&__col
+		position: relative
+		&:nth-child(1)
+			width: 23%
+			+lg
+				width: 26%
+			+md
+				width: 35%
+			+sm
+				width: 100%
+		&:nth-child(2)
+			width: 74.32433%
+			+lg
+				width: 72%
+			+md
+				width: 63.5%
+			+sm
+				padding-top: 15px
+				width: 100%
+		&:nth-child(3)
+			width: 74.32433%
+			+lg
+				width: 72%
+			+md
+				width: 100%
+	&__sld-wrapp
+		+md
+			width: 100%
+	&__sld
+		max-width: 825px
+		margin: 20px auto 0
+		overflow: hidden
+		border-radius: 5px
+		//box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+		+r(560)
+			display: none
+		+sm
+			margin: 0 -15px
+			border-radius: 0
+	&__sld-item
+		//height: 280px
+		position: relative
+		+r(560)
+	//height: 240px
+	&__sld-pic
+		//position: absolute
+		//z-index: 0
+		//width: 100%
+		//height: 100%
+		//pointer-events: none
+		//background-position: center center
+		//background-repeat: no-repeat
+		//background-size: initial
+		img
+			width: 100%
+	&__sld-inner
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: 60px
+		//position: relative
+		//padding-left: 60px
+		z-index: 2
+		font-size: 0
+		//height: 100%
+		+lg
+			left: 20px
+	//padding-left: 25px
+	//&::before
+	//	content: ''
+	//	display: inline-block
+	//	vertical-align: middle
+	//	height: 100%
+	&__sld-text
+		display: inline-block
+		vertical-align: middle
+		max-width: 530px
+		cursor: default
+	&__sld-title
+		font-size: 30px
+		line-height: (30/25)
+		color: #005895
+		font-family: $PEB
+		+sm
+			font-size: 24px
+	&__sld-descr
+		margin: 5px 0 15px
+		line-height: (40/25)
+		font-family: $PL
+		color: #40403e
+		font-size: 25px
+		+sm
+			font-size: 19px
+	&__sld-btn
+		height: 50px
+		line-height: 50px
+		padding: 0 37px
+		font-family: $PS
+		font-size: 15px
+		color: #000
+		+sm
+			padding: 0 5px
+		&:hover .icon
+			fill: $orange
+		.icon
+			vertical-align: initial
+			margin-left: 3px
+			font-size: 12px
+			fill: #40403e
+			+tr(fill .25s)
+			+sm
+				display: none
+	&__sld-arrow
+		position: absolute
+		top: calc(50% - 10px)
+		z-index: 3
+		background-color: transparent
+		font-size: 0
+		.icon
+			font-size: 20px
+		&:hover .icon
+			fill: #005895
+		&--prev
+			+rotate(180)
+			left: 20px
+			+lg
+				left: 5px
+		&--next
+			right: 20px
+			+lg
+				right: 5px
+		
+	&--parts
+		padding: 50px 0 40px
+	&--parts-sm
+		padding: 50px 0 30px
+	&--contacts
+		padding: 50px 0
+	&--personal
+		padding: 50px 0 90px
+	&--personal-sm
+		padding: 50px 0 80px
+	&--foreign
+		padding: 50px 0 20px
+	&--basket
+		padding: 50px 0 85px

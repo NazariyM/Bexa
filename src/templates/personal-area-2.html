@@ -1,0 +1,209 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <div class="screen screen--personal-sm">
+         <div class="container">
+            <div class="col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="col-r">
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Интернет магазин</a></li>
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Иномарки</a></li>
+                     <li class="breadcrumbs__item is-current">
+                        <a href="#!" class="breadcrumbs__link link-default">BMW</a></li>
+                  </ul>
+               </div>
+
+               <div class="personal">
+                  <h2 class="personal__title title-lg">ЛИЧНЫЙ КАБИНЕТ</h2>
+                  <div class="personal__inner">
+                     <table class="pay-table pay-table--personal">
+                        <thead class="pay-table__head">
+                        <tr>
+                           <td>№</td>
+                           <td>Дата</td>
+                           <td>Плательщик</td>
+                           <td>Содержание</td>
+                           <td>Комментарий</td>
+                           <td>Статус</td>
+                           <td></td>
+                        </tr>
+                        </thead>
+                        <tbody class="pay-table__body">
+                        <tr>
+                           <td>1</td>
+                           <td>13.03.17</td>
+                           <td>ООО Ромашка</td>
+                           <td>Фильтр сажевый, Колодки задние</td>
+                           <td>Позвонить</td>
+                           <td>Оплачен</td>
+                           <td></td>
+                        </tr>
+                        <tr class="pay-table__has-actions">
+                           <td>2</td>
+                           <td>13.03.17</td>
+                           <td>ООО Ромашка</td>
+                           <td>Фильтр сажевый, Колодки задние</td>
+                           <td>Позвонить</td>
+                           <td>Доставлен</td>
+                           <td class="pay-table__act">
+                              <button class="pay-table__act-btn" type="button">{{ mixins.icon('file') }}</button>
+                              <button class="pay-table__act-btn" type="button">{{ mixins.icon('cancel') }}</button>
+                           </td>
+                        </tr>
+                        </tbody>
+                     </table>
+                     <button class="personal__more-btn btn-border">{{ mixins.icon('more') }}<span>Показать еще</span></button>
+                  </div>
+                  <div class="personal__inner">
+                     <div class="personal__col">
+                        <div class="personal__pays">
+                           <h3 class="title-md">ПЛАТЕЛЬЩИКИ</h3>
+                           <div class="personal__pays-inner">
+                              <div class="personal__pays-item">
+                                 <div class="personal__pays-name">ООО Ромашка</div>
+                                 <div class="act-buttons act-buttons--personal">
+                                    <button class="act-buttons__btn" type="button">{{ mixins.icon('star') }}</button>
+                                    <button class="act-buttons__btn" type="button">{{ mixins.icon('pencil') }}</button>
+                                    <button class="act-buttons__btn" type="button">{{ mixins.icon('cancel') }}</button>
+                                 </div>
+                                 <div class="personal__pays-codes">
+                                    <span class="personal__pays-code">ИНН 6311136446</span>
+                                    <span class="personal__pays-code">КПП 631101001</span>
+                                 </div>
+                              </div>
+                              <div class="personal__pays-item">
+                                 <div class="personal__pays-name">ООО Ромашка</div>
+                                 <div class="personal__pays-codes">
+                                    <span class="personal__pays-code">ИНН 6311136446</span>
+                                    <span class="personal__pays-code">КПП 631101001</span>
+                                 </div>
+                              </div>
+                              <div class="personal__pays-item">
+                                 <div class="personal__pays-name">ООО Ромашка</div>
+                                 <div class="personal__pays-codes">
+                                    <span class="personal__pays-code">ИНН 6311136446</span>
+                                    <span class="personal__pays-code">КПП 631101001</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <a class="link-default link-default--black link-default--icon" href="#">
+                              <span>добавить плательщика</span>
+                              {{ mixins.icon('arrow') }}
+                           </a>
+                           <button class="personal__pays-more btn-more" type="button">
+                              {{ mixins.icon('arr-bott') }}
+                           </button>
+                        </div>
+                        <div class="personal__data personal__data--sm">
+                           <h3 class="title-md">ЛИЧНЫЕ ДАННЫЕ</h3>
+                           <div class="personal__data-info">
+                              <div class="personal__data-col">
+                                 <div class="personal__data-item">
+                                    <span class="personal__data-text personal__data-text--tel">Тел. аккаунта:</span>
+                                    <a class="personal__data-link" href="tel:+79271234567">+7 927 123-45-67</a>
+                                    <button class="btn-edit" type="button">{{ mixins.icon('pencil') }}</button>
+                                 </div>
+                                 <div class="personal__data-item">
+                                    <span class="personal__data-text personal__data-text--mail">Эл. почта:</span>
+                                    <a class="personal__data-link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+                                 </div>
+                              </div>
+                              <div class="personal__data-col">
+                                 <div class="personal__data-item">
+                                    <span class="personal__data-text">Имя:</span>
+                                    <span class="personal__data-link">Виталий</span>
+                                 </div>
+                              </div>
+                              <a class="link-default link-default--black link-default--icon" href="#!">
+                                 <span>изменить пароль</span>{{ mixins.icon('arrow') }}
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="personal__col">
+                        <div class="personal__man">
+                           <div class="personal__man-info">
+                              <h4 class="title-md title-md--l">ВАШ ЛИЧНЫЙ МЕНЕДЖЕР</h4>
+                              <div class="personal__man-name">Иванов Иван Иванович</div>
+                              <a class="personal__man-phone" href="tel:79271234567">+7 927 123-45-67</a>
+                              <a class="personal__man-phone" href="tel:78461234567">+7 846 123-45-67</a>
+                              <div class="personal__man-add">доб. 123</div>
+                              <a class="btn-border btn-border--blue" href="#!">Начать чат</a>
+                           </div>
+                           <div class="personal__man-look">
+                              <div class="personal__man-photo">
+                                 <div class="personal__man-img" style="background-image: url('img/manager.jpg')"></div>
+                              </div>
+                              <a class="link-default link-default--black" href="#!">сменить менеджера</a>
+                           </div>
+                        </div>
+                        <div class="personal__limit">
+                           <h3 class="title-md title-md--l">ЛИМИТ ОТЛОЖЕННЫХ ПОКУПОК</h3>
+                           <div class="limit">
+                              <div class="limit__inner">
+                                 <div class="limit__scale">
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i class="is-active"></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                 </div>
+                                 <div class="limit__status">
+                                    <div class="limit__status-text">Лимит: <span>50 900</span>/100 000 рублей</div>
+                                    <a class="link-default link-default--black link-default--icon" href="#!"><span>как увеличить</span>{{ mixins.icon('arrow') }}</a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

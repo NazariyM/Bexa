@@ -1,0 +1,95 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <div class="screen screen--contacts">
+         <div class="container">
+            <div class="col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="col-r">
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!" class="breadcrumbs__link link-default">Поиск</a></li>
+                  </ul>
+               </div>
+
+               <section class="address address--contacts">
+                  <h2 class="address__title title-lg">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+                  <div class="address__inner">
+                     <div class="address__block address__col">
+                        <div class="address__block-title title-sm title-sm--strong">САМАРА</div>
+                        <div class="address__block-item">
+                           <div class="address__block-type">Головной офис</div>
+                           <div class="address__block-street">ул. Грозненская, 65,</div>
+                           <a class="address__block-phone" href="tel:+78469977768">+7 (846) 997-77-68</a>
+                           <div class="address__block-time">пн-чт 8:00-19:00, пт 8:00-16:00</div>
+                        </div>
+                        <div class="address__block-item">
+                           <div class="address__block-type">магазин</div>
+                           <div class="address__block-street">ул. Литвинова, 302Б</div>
+                           <a class="address__block-phone" href="tel:+78469977768">+7 (846) 997-77-68</a>
+                           <div class="address__block-time">пн-чт 8:00-19:00, пт 8:00-16:00</div>
+                        </div>
+                        <div class="address__block-item">
+                           <div class="address__block-type">магазин</div>
+                           <div class="address__block-street">ул. Литвинова, 302Б</div>
+                           <a class="address__block-phone" href="tel:+78469977768">+7 (846) 997-77-68</a>
+                           <div class="address__block-time">пн-чт 8:00-19:00, пт 8:00-16:00</div>
+                        </div>
+                        <button class="address__block-btn" type="button">{{ mixins.icon('arrow-sld') }}</button>
+                     </div>
+                     <div class="address__map address__col">
+                        <div class="address__map-img"
+                             style="background-image: url('img/content/address-map.png')"></div>
+                        <div class="address__map-location address__map-location--1">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city address__map-city--left">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--2">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--3 is-active">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--4">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city address__map-city--left">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--5">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--6">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--7">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                        <div class="address__map-location address__map-location--8">
+                           {{ mixins.icon('map-balloon') }}
+                           <div class="address__map-city">г. Самара</div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+         </div>
+      </div>
+
+      {% include "partials/_feed.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

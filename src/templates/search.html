@@ -1,0 +1,88 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <section class="screen">
+         <div class="container">
+            <div class="screen__col col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="screen__col col-r">
+
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!" class="breadcrumbs__link link-default">Поиск</a></li>
+                  </ul>
+               </div>
+
+               <div class="search search--default">
+                  <h2 class="search__title title-sm title-sm--short">ПОИСК СРЕДИ 20 000 000 ЗАПЧАСТЕЙ ДЛЯ ИНОМАРОК, ОТЕЧЕСТВЕННЫХ И ГРУЗОВЫХ АВТО</h2>
+                  <div class="search__inner">
+                     <div class="search__form-wrapp search__form-wrapp--full">
+                        <form class="search__form" action="#">
+                           <div class="search__form-field search__form-field--simple">
+                              <input class="search__form-input" type="text" name="" title="Поиск">
+                              <button class="search__form-btn" type="submit">{{ mixins.icon('search') }}</button>
+                              <ul class="search__tags">
+                                 <li>9091901164 <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                                 </li>
+                              </ul>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="search__table-wrap">
+                     <div class="search__result">По вашему запросу найдено <span>2 товара:</span></div>
+                     <table class="pay-table pay-table--search">
+                        <thead class="pay-table__head">
+                        <tr>
+                           <td>Производитель</td>
+                           <td>Наименование</td>
+                        </tr>
+                        </thead>
+                        <tbody class="pay-table__body">
+                        <tr>
+                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                        </tr>
+                        <tr>
+                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                        </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </section>
+
+      {% include "partials/_disblock.html" %}
+
+      {% include "partials/_offers-product.html" %}
+
+      {% include "partials/_read.html" %}
+
+      {% include "partials/_about.html" %}
+
+      {% include "partials/_address.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

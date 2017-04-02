@@ -1,0 +1,299 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <section class="screen screen--basket">
+         <div class="container">
+            <div class="screen__col col-l">
+               {% include "partials/_sidebar.html" %}
+            </div>
+            <div class="screen__col col-r">
+
+               <div class="breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Интернет магазин</a></li>
+                     <li class="breadcrumbs__item">
+                        <a href="#!" class="breadcrumbs__link link-default">Иномарки</a>
+                     </li>
+                     <li class="breadcrumbs__item is-current">
+                        <a href="#!" class="breadcrumbs__link link-default">BMW</a>
+                     </li>
+                  </ul>
+               </div>
+
+               <div class="basket">
+                  <h2 class="basket__title title-lg">КОРЗИНА ТОВАРОВ</h2>
+                  <div class="basket__form-wrap">
+                     <form action="#!">
+                        <table class="pay-table pay-table--basket">
+                           <thead class="pay-table__head">
+                           <tr>
+                              <td>Наименование</td>
+                              <td>Артикул</td>
+                              <td>Цена</td>
+                              <td>Комментарий</td>
+                              <td>кол-во</td>
+                              <td>Сумма</td>
+                              <td></td>
+                           </tr>
+                           </thead>
+                           <tbody class="pay-table__body">
+                           <tr class="pay-table__has-actions">
+                              <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
+                              <td>4014766073051</td>
+                              <td>1 904р.</td>
+                              <td>
+                                 <div class="pay-table__field ">
+                                    <input class="input-default" type="text" title="Ваш комментарий"
+                                           placeholder="Ваш комментарий" name="">
+                                 </div>
+                              </td>
+                              <td>
+                                 <input type="number" value="1" name="">
+                              </td>
+                              <td>1 904р.</td>
+                              <td>
+                                 <button class="pay-table__act-btn" type="button">{{ mixins.icon('cancel') }}</button>
+                              </td>
+                           </tr>
+                           <tr class="pay-table__has-actions">
+                              <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
+                              <td>4014766073051</td>
+                              <td>1 904р.</td>
+                              <td>
+                                 <div class="pay-table__field ">
+                                    <input class="input-default" type="text" title="Ваш комментарий"
+                                           placeholder="Ваш комментарий" name="">
+                                 </div>
+                              </td>
+                              <td>
+                                 <input type="number" value="1" name="">
+                              </td>
+                              <td>1 904р.</td>
+                              <td>
+                                 <button class="pay-table__act-btn" type="button">{{ mixins.icon('cancel') }}</button>
+                              </td>
+                           </tr>
+                           </tbody>
+                        </table>
+                        <div class="basket__disc-wrap">
+                           <div class="basket__col basket__disc">
+                              <h5 class="basket__disc-title title-xs">Применить купон на скидку или дисконтную карту</h5>
+                              <div class="basket__disc-field ">
+                                 <input class="input-default" type="text"
+                                        title="Введите номер купона на скидку или номер ДК"
+                                        placeholder="Введите номер купона на скидку или номер ДК" name="">
+                              </div>
+                              <div class="basket__disc-inn">
+                                 <div class="basket__disc-col">
+                                    <div class="basket__disc-field basket__disc-field--captcha">
+                                       <input class="input-default" type="text"
+                                              title="Цифры с картинки"
+                                              placeholder="Цифры с картинки" name="">
+                                       <div class="basket__disc-captcha">
+                                          <img src="img/captcha.png" alt="img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="basket__disc-col">
+                                    <button class="basket__disc-btn btn-border" type="submit">Применить</button>
+                                    <div class="basket__disc-promo">Ваша скидка составляет <span>15%</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="basket__col basket__total">
+                              <div class="basket__total">
+                                 <div class="basket__total-field">Общая сумма: <span>3 808 р.</span></div>
+                                 <div class="basket__total-field">Сумма с учетом скидки: <span>3 500 р.</span></div>
+                                 <div class="basket__total-field">Итого: <span>3 500 р.</span></div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="basket__inn">
+                     <div class="basket__col basket__col--mod">
+                        <div class="product product--double">
+                           <div class="product__title-md title-md">НЕ ЗАБУДЬТЕ КУПИТЬ</div>
+                           <div class="product__inner">
+                              <div class="product__inner-col">
+                                 <div class="product__pic">
+                                    <img class="product__img" src="img/hslider1.jpg" alt="img">
+                                 </div>
+                                 <div class="product__descr">
+                                    <div class="product__discount">
+                                       {{ mixins.icon('discount') }}
+                                       <span class="product__discount-text">-15%</span>
+                                    </div>
+                                    <a class="product__title" href="#!">Масло 10W40 MOBIL ULTRA</a>
+                                    <div class="product__price-old">1 995</div>
+                                    <div class="product__price">1 890 {{ mixins.icon('rubl') }}</div>
+                                 </div>
+                                 <div class="product__buy">
+                                    <a class="btn product__buy-btn" href="#!">{{ mixins.icon('basket-btn') }} КУПИТЬ</a>
+                                    <div class="product__in-stock">В наличии <span>459</span> шт </div>
+                                 </div>
+                              </div>
+                              <div class="product__inner-col">
+                                 <div class="product__pic">
+                                    <img class="product__img" src="img/hslider1.jpg" alt="img">
+                                 </div>
+                                 <div class="product__descr">
+                                    <div class="product__discount">
+                                       {{ mixins.icon('discount') }}
+                                       <span class="product__discount-text">-15%</span>
+                                    </div>
+                                    <a class="product__title" href="#!">Масло 10W40 MOBIL ULTRA</a>
+                                    <div class="product__price-old">1 995</div>
+                                    <div class="product__price">1 890 {{ mixins.icon('rubl') }}</div>
+                                 </div>
+                                 <div class="product__buy">
+                                    <a class="btn product__buy-btn" href="#!">{{ mixins.icon('basket-btn') }} КУПИТЬ</a>
+                                    <div class="product__in-stock">В наличии <span>459</span> шт </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <a href="#!" class="basket__data-btn btn-border btn-border--blue">перейти к вводу данных плательщика</a>
+                     </div>
+                     <div class="basket__col basket__col--mod">
+                        <div class="drop">
+                           <h4 class="drop__title title-sm title-sm--strong">мы соберем корзину за вас бесплатно</h4>
+                           <p class="drop__descr">Для этого вам нужно просто приложить файл со списком требуемых покупок</p>
+                           <button class="btn-border" type="button">приложить файл</button>
+                           <div class="drop__format">в формате .xls/.doc</div>
+                           <div class="drop__loaded">Загружен файл price.xls</div>
+                           <button class="drop__send-btn btn-border btn-border--blue" type="button">отправить менеджеру</button>
+                           <div class="drop__status">файл успешно отправлен</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="basket__inn">
+                     <div class="basket__container">
+                        <div class="basket__data">
+                           <div class="basket__data-top">
+                              <h2 class="basket__data-title title-lg">ШАГ 2. ДАННЫЕ ПЛАТЕЛЬЩИКА</h2>
+                              <div class="basket__data-log">или <a href="#!">Войти</a></div>
+                              <div class="basket__data-face">
+                                 <a class="basket__data-link link-default is-active" href="#!">физическое лицо</a><span>/</span><a class="basket__data-link link-default" href="#!">юридическое лицо</a>
+                              </div>
+                           </div>
+                           <div class="basket__data-form">
+                              <form action="#!">
+                                 <div class="basket__data-row">
+                                    <div class="basket__data-field">
+                                       <input class="input-default" type="text" placeholder="Как к вам обращаться" title="Как к вам обращаться">
+                                    </div>
+                                    <div class="basket__data-field">
+                                       <input class="input-default" type="tel" placeholder="Контактный телефон" title="Контактный телефон">
+                                    </div>
+                                    <div class="basket__data-field">
+                                       <input class="input-default" type="email" placeholder="Контактный e-mail" title="Контактный e-mail">
+                                    </div>
+                                 </div>
+                                 <div class="basket__data-row">
+                                    <div class="basket__data-field basket__data-field--captcha">
+                                       <input class="input-default" type="text" title="Введите цифры на картинке
+" placeholder="Введите цифры на картинке" name="">
+                                       <div class="basket__data-captcha">
+                                          <img src="img/captcha.png" alt="img">
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <a href="#!" class="basket__data-btn btn-border btn-border--blue">подтвердить и перейти к вводу данных о доставке и оплате</a>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="basket__container">
+                     <div class="basket__delivery">
+                        <h2 class="basket__delivery-title title-lg">ШАГ 3. ДОСТАВКА И ОПЛАТА</h2>
+                        <form action="#!">
+                           <div class="basket__delivery-inn">
+                              <div class="basket__delivery-col">
+                                 <h6 class="basket__delivery-subtitle">ВЫБЕРИТЕ СПОСОБ ДОСТАВКИ</h6>
+                                 <div class="basket__delivery-field">
+                                    <div class="radio-default">
+                                       <input type="radio" id="radio-1" name="1">
+                                       <label for="radio-1"><span>Самовывоз</span></label>
+                                    </div>
+                                 </div>
+                                 <div class="basket__delivery-field">
+                                    <select name="">
+                                       <option value="">Выберите пункт самовывоза</option>
+                                       <option value="">Пункт 1</option>
+                                       <option value="">Пункт 2</option>
+                                       <option value="">Пункт 3</option>
+                                       <option value="">Пункт 4</option>
+                                       <option value="">Пункт 5</option>
+                                    </select>
+                                 </div>
+                                 <div class="basket__delivery-field">
+                                    <div class="radio-default">
+                                       <input type="radio" id="radio-2" name="1">
+                                       <label for="radio-2"><span>Доставка курьером</span></label>
+                                    </div>
+                                    <div class="basket__delivery-tip">бесплатно при заказе от 50 000 р</div>
+                                 </div>
+                                 <div class="basket__delivery-field">
+                                    <input type="text" class="input-default" placeholder="укажите адрес доставки">
+                                 </div>
+                              </div>
+                              <div class="basket__delivery-col">
+                                 <h6 class="basket__delivery-subtitle">ВЫБЕРИТЕ СПОСОБ ОПЛАТЫ</h6>
+                                 <div class="basket__delivery-field">
+                                    <div class="radio-default">
+                                       <input type="radio" id="radio-3" name="2">
+                                       <label for="radio-3"><span>Оплата на сайте</span></label>
+                                    </div>
+                                    <div class="basket__payment payment">
+                                       {{ mixins.icon('mc') }}
+                                       {{ mixins.icon('visa') }}
+                                    </div>
+                                    <div class="basket__delivery-tip">после подтверждения наличия менеджером</div>
+                                 </div>
+                                 <div class="basket__delivery-field">
+                                    <div class="radio-default">
+                                       <input type="radio" id="radio-4" name="2">
+                                       <label for="radio-4"><span>Оплата при получении заказа</span></label>
+                                    </div>
+                                 </div>
+                                 <div class="basket__delivery-field">
+                                    <div class="radio-default">
+                                       <input type="radio" id="radio-5" name="2">
+                                       <label for="radio-5"><span>Выставить счет</span></label>
+                                    </div>
+                                    <div class="basket__delivery-tip">для оплаты в отделении банка</div>
+                                 </div>
+                              </div>
+                              <div class="basket__delivery-col">
+                                 <div class="call-timer">
+                                    <button class="btn-border btn-border--blue">отправить заказ на проверку</button>
+                                    <div class="call-timer__count">9:59</div>
+                                 </div>
+                                 <div class="basket__delivery-tip basket__delivery-tip--full">Далее наши менеджеры проверят все позиции заказа и наличие. Вы получите уведомление. Время ожидани менее 10 минут.</div>
+                                 <a class="link-default link-default--black link-default--icon" href="#!">со мной не связались{{ mixins.icon('arrow') }}</a>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

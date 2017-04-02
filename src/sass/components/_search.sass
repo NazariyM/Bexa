@@ -1,0 +1,244 @@
+.search
+	&__view
+		float: left
+		margin-top: 14px
+		font-size: 0
+	&__view-btn
+		background-color: transparent
+		font-size: 18px
+		& + &
+			margin-left: 10px
+		.icon
+			fill: #000
+		&.is-active .icon
+			fill: #ff6c00
+	&__title
+		margin-bottom: 10px
+		text-transform: none
+		+md
+			font-size: 19px
+	&__inner
+		+clr
+	&__form-wrapp
+		float: left
+		margin-right: 15px
+		width: (760/825 * 100%)
+		&--full
+			width: 100%
+			float: none
+			margin-right: 0
+	&__form-field
+		position: relative
+		border-radius: 5px 5px 0 0
+		background-color: #fff
+		border: 2px solid #ee6919
+		overflow: hidden
+		+sm
+			border-radius: 5px
+		&--simple
+			border-radius: 5px
+			box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+	&__form-input
+		width: 100%
+		padding: 5px 50px 5px 5px
+		height: 46px
+		line-height: 46px
+		font-size: 14px
+		font-family: $PL
+		color: #000
+	&__form-btn
+		position: absolute
+		right: 0
+		top: 0
+		height: 46px
+		line-height: 58px
+		width: 50px
+		background-color: transparent
+		.icon-search
+			vertical-align: initial
+			font-size: 20px
+			+tr(fill .25s)
+		&:hover .icon-search
+			fill: #005895
+	&__tags
+		position: absolute
+		top: 5px
+		bottom: 5px
+		left: 5px
+		z-index: 1
+		li
+			display: inline-block
+			vertical-align: top
+			margin-right: 5px
+			padding: 0 15px
+			height: 36px
+			line-height: 36px
+			border-radius: 5px
+			border: 1px solid #e7e7e7
+			background-color: #f5f5f5
+			cursor: default
+			font-size: 14px
+			&:last-child
+				margin-right: 0
+		&-remove
+			display: inline-block
+			vertical-align: inherit
+			margin-left: 3px
+			font-size: 8px
+			cursor: pointer
+	&__types
+		text-align: center
+		font-size: 0
+		text-transform: uppercase
+	&__types-top
+		position: relative
+		padding: 20px 0 65px
+		border-radius: 0 0 5px 5px
+		background-color: #ee6919
+		box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+		+md
+			display: flex
+			justify-content: space-around
+			padding: 20px 0
+		+sm
+			display: none
+		&::after
+			content: ''
+			position: absolute
+			left: 0
+			bottom: 55%
+			z-index: 1
+			background-color: #f17f3b
+			width: 100%
+			height: 1px
+			+md
+				display: none
+	&__types-link
+		display: inline-block
+		vertical-align: top
+		margin: 0 25px
+		color: #fff
+		font-size: 13px
+		text-decoration: underline
+		text-decoration-color: #f28f53
+		+tr(color .25s)
+		&:hover
+			text-decoration: none
+			color: #0079c0
+		+md
+			margin: 0
+	&__types-list
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-top: -45px
+		background-color: #fff
+		+md
+			margin-top: 50px
+			flex-wrap: wrap
+		+sm
+			margin-top: 20px
+	&__types-pic
+		display: flex
+		flex-direction: column
+		justify-content: flex-end
+		width: 115px
+		flex-basis: 115px
+		+lg
+			width: 100px
+			flex-basis: 100px
+		+md
+			margin-bottom: 20px
+			width: 115px
+			flex-basis: 115px
+		&::before
+			position: relative
+			margin-bottom: 15px
+			left: -7px
+			display: block
+			content: ''
+		&--1::before
+			+s('kamaz')
+		&--2::before
+			+s('gaz')
+			left: -24px
+		&--3::before
+			+s('zil')
+		&--4::before
+			+s('uaz')
+		&--5::before
+			+s('paz')
+		&--6::before
+			+s('selhoz')
+		&--7::before
+			+s('spec-tech')
+	&__types-car
+		display: inline-block
+		vertical-align: middle
+		align-self: center
+		font-size: 13px
+		font-family: $PS
+		color: #000
+		text-decoration-color: #bfbfbf
+		&:hover
+			text-decoration: none
+	&__table-wrap
+		margin: 25px 0 0
+	&__result
+		margin-bottom: 15px
+		font-size: 18px
+		line-height: (20/18)
+		color: #8a8a89
+		span
+			color: #40403e
+	&__list-wrap
+		padding: 30px 0 0
+	&__list
+		padding-bottom: 30px
+		+clr
+		&-item
+			float: left
+			& + &
+				margin-left: 4px
+			&.is-active a
+				color: #fff
+				background-color: rgba(0, 120, 191, 0.94)
+		&-link
+			box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+			display: block
+			border-radius: 5px
+			border: 1px solid #e7e7e7
+			text-transform: uppercase
+			font-family: $PS
+			text-decoration: none
+			color: #40403e
+			padding: 0 16px
+			height: 41px
+			line-height: 41px
+			text-align: center
+			background-color: rgba(255, 255, 255, 0.25)
+			+tr(background .25s)
+			&:hover
+				background-color: #e6e6e4
+	&__cat
+		max-width: 800px
+		a
+			display: inline-block
+			margin-right: 17px
+			margin-bottom: 13px
+			font-size: 14px
+	&__cat-item
+		margin-bottom: 17px
+	&__cat-numb
+		margin-bottom: 15px
+		font-size: 30px
+		color: #8a8a89
+		font-family: $PL
+	
+	
+	&--parts
+		padding: 25px 0 35px
+	&--cars
+		padding-top: 15px
+	&--default
+		padding: 15px 0 0

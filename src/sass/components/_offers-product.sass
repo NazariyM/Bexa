@@ -1,0 +1,367 @@
+.offers
+	&__suggest
+		padding-top: 55px
+		margin-bottom: 20px
+		border-top: 1px solid $border-gray
+		font-size: 0
+		+sm
+			padding-top: 25px
+	&__title
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		+md
+			margin-right: 15px
+			font-size: 27px
+		+sm
+			margin-right: 0
+			margin-bottom: 10px
+			font-size: 24px
+	&__btn
+		display: inline-block
+		vertical-align: middle
+		letter-spacing: 0.05em
+		&:hover .icon
+			fill: $orange
+		.icon
+			display: inline-block
+			vertical-align: -3px
+			margin-right: 6px
+			font-size: 16px
+			+tr(fill .25s)
+	&__inner
+		padding-bottom: 30px
+		+clr
+	&__row
+		margin: 0 -15px
+		font-size: 0
+		+sm
+			margin: 0 -5px
+	&__col
+		display: inline-block
+		vertical-align: top
+		padding: 0 15px 30px
+		width: 25%
+		&:nth-child(8) ~ &
+			display: none
+		&:nth-child(6) ~ &
+			+md
+				display: none
+		+md
+			width: 33.33333%
+		+sm
+			width: 50%
+			padding: 0 5px 10px
+		+xs
+			width: 100%
+	&__col-xs
+		width: (350/1100 * 100%)
+		float: right
+		+md
+			width: 100%
+	&__col-sm
+		float: left
+		width: (350/730 * 100%)
+		margin-right: 30px
+		& + &
+			margin-right: 0
+		+lg
+			margin-right: 25px
+		+md
+			margin-right: 30px
+		+sm
+			width: 100%
+			margin-right: 0
+			margin-bottom: 15px
+	&__col-md
+		+clr
+		float: left
+		width: (730/1110 * 100%)
+		+md
+			width: 100%
+			margin-bottom: 15px
+		&--full
+			margin-top: 30px
+			width: 100%
+			+sm
+				margin-top: 0
+	&__more
+		text-align: center
+		+sm
+			margin-top: 10px
+			
+	&--home
+		padding-bottom: 60px
+		+sm
+			padding-bottom: 15px
+	
+	&--view
+		padding-bottom: 40px
+		.offers__col
+			width: 33.33333%
+		
+// PRODUCTS
+.product
+	padding: 20px 20px 20px 25px
+	min-height: 335px
+	border-radius: 5px
+	border: 1px solid #e7e7e7
+	background-color: #fff
+	+lg
+		padding: 20px 20px 20px 20px
+	&--item
+		position: relative
+		min-height: 290px
+	&--vertical
+		min-height: 700px
+		padding-bottom: 50px
+		+lg
+			padding: 20px 15px
+		+md
+			min-height: 0
+		.product__arrow
+			top: auto
+			bottom: -35px
+			vertical-align: -2px
+			+md
+				bottom: auto
+				top: -50px
+		.product__arrow--prev
+			.icon
+				+rotate(-90)
+				+md
+					+rotate(-180)
+		.product__arrow--next
+			.icon
+				+rotate(90)
+				+md
+					+rotate(0)
+		.product__category-title
+			max-width: 185px
+			+md
+				max-width: none
+	&--double
+		padding: 25px 5px 20px 5px
+		min-height: 0
+		.product__descr
+			width: calc(100% - 140px)
+		.product__buy
+			margin-top: 20px
+			padding: 15px 0 10px 10px
+	&__inner
+		font-size: 0
+		+clr
+	&__category-title
+		margin-right: 50px
+		margin-bottom: 15px
+	&__title
+		display: block
+		margin: 5px 0 10px
+		font-size: 18px
+		font-family: $PR
+		line-height: (22/18)
+		color: $black-light
+		text-decoration: none
+		+lg
+			min-height: 65px
+		&-md
+			margin-bottom: 25px
+			margin-left: 15px
+			text-align: left
+	&__slider
+		font-size: 0
+	&__inner-col
+		width: 50%
+		display: inline-block
+		vertical-align: middle
+	&__inner-half
+		width: 45%
+		float: left
+		+sm
+			width: 100%
+		& + &
+			margin-left: 10%
+			+sm
+				margin-left: 0
+	&__price
+		font-size: 30px
+		line-height: 1
+		font-family: $PEB
+		color: $blue
+		.icon
+			font-size: 20px
+			fill: $blue
+		&--sm
+			display: inline-block
+			vertical-align: middle
+			margin-left: 10px
+			font-size: 20px
+			.icon
+				font-size: 14px
+		&--item
+			display: inline-block
+			vertical-align: middle
+			margin-left: 5px
+			font-size: 28px
+			.icon
+				font-size: 18px
+	&__price-old
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		font-size: 20px
+		color: $gray
+		font-family: $PL
+		line-height: 1
+		&--sm
+			font-size: 16px
+		&::after
+			position: absolute
+			top: 53%
+			left: 0
+			right: 0
+			height: 1px
+			background-color: $gray
+			z-index: 1
+			content: ''
+	&__discount-text
+		position: relative
+		z-index: 1
+	&__discount
+		width: 52px
+		height: 22px
+		font-size: 13px
+		position: relative
+		color: $black
+		line-height: 22px
+		padding-left: 14px
+		&--item
+			position: absolute
+			top: 25px
+			left: 25px
+			z-index: 1
+			+lg
+				top: 15px
+				left: 15px
+		.icon
+			font-size: 21px
+			position: absolute
+			left: 0
+			top: 0
+			display: block
+			fill: #bbe3ff
+			z-index: 1
+	&__arrow
+		position: absolute
+		top: -45px
+		z-index: 1
+		width: 25px
+		height: 25px
+		border-radius: 5px
+		border: 1px solid #e7e7e7
+		background-color: #f5f5f5
+		text-align: center
+		+tr(border-color .25s)
+		.icon
+			font-size: 13px
+			display: inline-block
+			vertical-align: -1px
+		&--prev
+			right: 23px
+			.icon
+				+rotate(180)
+				vertical-align: -2px
+		&--next
+			right: -5px
+		&:hover
+			border-color: #40403e
+	&__pic
+		display: inline-block
+		vertical-align: middle
+		width: 135px
+		height: 135px
+		&--item
+			display: block
+			margin: 0 auto
+	&__descr
+		display: inline-block
+		vertical-align: middle
+		width: calc(100% - 135px)
+		text-align: left
+		&--item
+			margin-top: 15px
+			width: 100%
+	&__category
+		font-size: 14px
+		color: #8a8a89
+		font-family: $PR
+		text-decoration: none
+	&__buy
+		margin-top: 15px
+		padding: 15px 20px 30px
+		border-top: 1px solid #f3f3f3
+		+lg
+			padding: 15px 10px 30px
+			text-align: center
+		+xs
+			padding: 15px 0 30px
+	&__buy-btn
+		vertical-align: middle
+		padding: 0 17px
+		text-decoration: none
+		.icon
+			display: inline-block
+			vertical-align: text-top
+			transition: fill .25s
+			fill: $white
+		&:hover .icon
+			fill: #ed691f
+	&__in-stock
+		display: inline-block
+		vertical-align: middle
+		font-size: 15px
+		font-family: $PL
+		line-height: 1
+		color: $gray
+		margin-left: 15px
+	&__all
+		text-align: center
+	&__all-link
+		font-family: $PR
+		font-size: 14px
+		color: #40403e
+		border-bottom: 1px solid #cbcbca
+		text-decoration: none
+		text-transform: uppercase
+		+tr(border-bottom-color .15s)
+		+xs
+			line-height: 1.5
+		&:hover
+			border-bottom-color: transparent
+	&__brand
+		height: 140px!important
+		+md
+			height: auto!important
+			padding: 0 5px
+	&__brand-buy
+		padding: 15px 0 20px
+		border-bottom: 1px solid #f3f3f3
+		+md
+			padding: 15px 0 0
+			border-bottom: none
+	&__brand-title
+		display: block
+		max-width: 180px
+		margin-bottom: 10px
+		line-height: 1.3
+		font-size: 18px
+		text-decoration: none
+		color: #000
+		font-family: "ProximaNova-Semibold", sans-serif
+	&__brand-text
+		display: inline-block
+		vertical-align: middle
+		width: calc(100% - 110px)
+		+md
+			width: 100%
+			margin-bottom: 10px

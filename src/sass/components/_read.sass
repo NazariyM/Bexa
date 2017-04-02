@@ -1,0 +1,184 @@
+.read
+	padding: 0 0 50px
+	&__col-md
+		flex-wrap: wrap
+		display: flex
+		float: left
+		width: (730/1110 * 100%)
+		+lg
+			width: 63.3%
+		+md
+			width: 100%
+	&__col-side
+		float: right
+		width: (350/1110 * 100%)
+		+lg
+			width: 34.8%
+		+md
+			width: 100%
+	&__article
+		position: relative
+		float: left
+		padding: 15px 25px 50px
+		border-radius: 5px
+		border: 1px solid #e7e7e7
+		+lg
+			padding: 15px 15px 40px
+		+md
+			margin-bottom: 30px
+		&--md
+			width: (350/730 * 100%)
+			margin-right: 30px
+			margin-bottom: 30px
+			+lg
+				margin-right: 25px
+				margin-bottom: 20px
+			+md
+				margin-right: 30px
+				margin-bottom: 30px
+			+sm
+				width: 100%
+				margin-right: 0
+				margin-bottom: 15px
+		&--md + &
+			margin-right: 0
+		&-title
+			margin-bottom: 5px
+			color: $black-light
+			font-size: 25px
+			font-weight: 600
+			line-height: (30/25)
+			font-family: $PS
+			+sm
+				font-size: 21px
+			&--news
+				display: inline-block
+				vertical-align: middle
+				width: calc(100% - 145px)
+				margin-bottom: 0
+		&-descr
+			font-family: $PR
+			color: $gray
+			font-size: 15px
+			line-height: (24/15)
+		&-read
+			position: absolute
+			bottom: 15px
+			z-index: 1
+		&-link
+			display: inline-block
+			font-size: 13px
+			color: $blue
+			font-family: $PS
+			text-transform: uppercase
+			border-bottom: 1px solid #bfd5e5
+			text-decoration: none
+			letter-spacing: 0.05em
+			+tr(border-bottom-color .15s)
+			&:hover
+				border-bottom-color: transparent
+		&-link--all
+			position: relative
+			padding-right: 17px
+			margin-left: 27px
+			border-bottom: none
+			span
+				color: $black
+				border-bottom: 1px solid #bfbfbf
+				+tr(border-bottom-color .15s)
+			&:hover span
+				border-bottom-color: transparent
+			.icon-arrow
+				position: absolute
+				z-index: 1
+				top: 0
+				right: 0
+				font-size: 12px
+				fill: $black
+		&-img
+			position: absolute
+			top: 15px
+			right: 15px
+			opacity: .15
+	&__news
+		padding: 25px 22px 35px
+		min-height: 503px
+		border-radius: 5px
+		border: 1px solid #e7e7e7
+		font-size: 0
+		+lg
+			padding: 20px 20px 30px
+		+md
+			padding: 20px 20px 40px
+			min-height: 0
+		+sm
+			padding: 20px 10px 40px
+		&-inner
+			margin-bottom: 20px
+			+md
+				margin-bottom: 10px
+		&-slider
+			border-top: 1px solid #f3f3f3
+			border-bottom: 1px solid #f3f3f3
+		&-item
+			position: relative
+			height: 180px!important
+			+md
+				height: auto!important
+			&.slick-current
+				border-bottom: 1px solid #f3f3f3
+		&-date
+			margin: 15px 0 5px
+			font-size: 12px
+			text-transform: uppercase
+			color: #8a8a89
+			+md
+				margin: 5px 0
+			.icon
+				font-size: 16px
+				display: inline-block
+				margin-right: 3px
+				vertical-align: -3px
+		&-title
+			display: inline-block
+			margin-bottom: 5px
+			font-size: 18px
+			line-height: 1
+			color: #005895
+			font-family: $PS
+			text-decoration-color: #8fb6d1
+			+sm
+				font-size: 16px
+				height: 32px
+			&:hover
+				text-decoration-color: transparent
+		&-descr
+			font-size: 15px
+			line-height: (24/15)
+			color: #40403e
+	&__arrow
+		position: absolute
+		bottom: -40px
+		z-index: 1
+		width: 25px
+		height: 25px
+		border-radius: 5px
+		border: 1px solid #e7e7e7
+		background-color: #f5f5f5
+		text-align: center
+		+tr(border-color .25s)
+		+md
+			bottom: -34px
+		.icon
+			font-size: 13px
+			display: inline-block
+			vertical-align: -2px
+		&--prev
+			right: 23px
+			.icon
+				+rotate(-90)
+		&--next
+			right: -5px
+			+rotate(90)
+		&:hover
+			border-color: $black-light
