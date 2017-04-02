@@ -2017,10 +2017,6 @@ h1, h2, h3, h4, h5, h6 {
   animation: mob-ring 1s infinite alternate linear;
 }
 
-.float-phone:hover {
-  background-color: #ed691f;
-}
-
 .float-phone .icon {
   font-size: 22px;
 }
@@ -4971,10 +4967,6 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -34px;
   }
 
-  .search__title {
-    font-size: 19px;
-  }
-
   .search__types-top {
     display: -ms-flexbox;
     display: flex;
@@ -5270,6 +5262,10 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
   }
 
+  .search__types {
+    padding: 15px 0;
+  }
+
   .search__types-top {
     display: none;
   }
@@ -5279,7 +5275,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .about {
-    padding: 30px 0;
+    display: none;
   }
 
   .about__title {
@@ -5294,13 +5290,24 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0px -1px 20px 2px rgba(0, 0, 0, 0.15);
   }
 
+  .screen__container {
+    display: table;
+  }
+
   .screen__col:nth-child(1) {
+    float: none;
     width: 100%;
+    display: table-footer-group;
   }
 
   .screen__col:nth-child(2) {
-    padding-top: 15px;
+    float: none;
+    display: table-header-group;
     width: 100%;
+  }
+
+  .screen__col:nth-child(3) {
+    display: none;
   }
 
   .screen__sld {
@@ -5321,6 +5328,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .screen__sld-btn .icon {
+    display: none;
+  }
+
+  .screen--home .search__title {
     display: none;
   }
 
@@ -5359,13 +5370,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .footer__menu {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 560px) {
-
-  .screen__sld {
     display: none;
   }
 }
