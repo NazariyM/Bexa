@@ -1,5 +1,5 @@
 <header class="header">
-   <div class="container">
+   <div class="header__container container">
       <div class="header__col">
          <a class="logo" href="#">
             <img class="logo__img" src="img/logo.png" alt="img"></a>
@@ -20,6 +20,9 @@
                <a class="loc__all" href="#!">адреса магазинов</a>
             </div>
             <div class="userbar userbar--header">
+               <button class="js-menu-btn burger">
+                  <span></span>
+               </button>
                <a class="userbar__item" href="#">{{ mixins.icon('user') }}</a>
                <a class="userbar__item" href="#">
                   <div class="userbar__count userbar__count--present">1</div>
@@ -38,7 +41,6 @@
       </div>
       <div class="header__col">
          <nav class="menu">
-            <button type="button" class="menu__btn js-menu-btn">Категории</button>
             <ul class="menu__list js-menu">
                <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Веха-клуб</a></li>
@@ -51,5 +53,5 @@
          </nav>
       </div>
    </div>
-
+   <a class="float-phone" href="tel:+78462791919">{{ mixins.icon('mobile') }}</a>
 </header>

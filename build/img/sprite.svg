@@ -1,4 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#40403e;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#40403e;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#fff;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#bbe3ff;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#005895;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#40403e;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#005895;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#005895;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#ed691f;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:none;stroke:#ed691f;stroke-width:3px;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#005895;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#40403e;fill-rule:evenodd}
+        </style>
+    
+        <style>
+            .cls-1{fill:#005895;fill-rule:evenodd}
+        </style>
     </defs><symbol id="icon-arr-bott" viewBox="0 0 13 9">
     <path d="M1 2.52L2.36 1l4.6 4.99 4.68-4.93L13 2.54 7 9z"/>
 </symbol><symbol id="icon-arrow-b" viewBox="0 0 13 21">
@@ -65,6 +132,8 @@
     <path d="M21.19 1.44c-2.13 0-4.09.74-5.61 1.96A9.41 9.41 0 0 0 9.27.99 9.14 9.14 0 0 0 0 10a9.15 9.15 0 0 0 9.27 9.01c2.44 0 4.65-.92 6.31-2.42a8.9 8.9 0 0 0 5.61 1.97A8.7 8.7 0 0 0 30 10a8.7 8.7 0 0 0-8.81-8.56zm0 14.89a6.57 6.57 0 0 1-4.13-1.44 8.79 8.79 0 0 0 0-9.78 6.57 6.57 0 0 1 4.13-1.44A6.43 6.43 0 0 1 27.7 10a6.43 6.43 0 0 1-6.51 6.33z"/>
 </symbol><symbol id="icon-minus" viewBox="0 0 491.858 491.858">
     <path d="M465.167 211.613H26.69c-8.424 0-26.69 11.439-26.69 34.316s18.267 34.316 26.69 34.316H465.169c8.421 0 26.689-11.439 26.689-34.316s-18.268-34.316-26.691-34.316z"/>
+</symbol><symbol id="icon-mobile" viewBox="0 0 27 22">
+    <path d="M4.9 0v22h17.2V0zm14.74 19.56H7.36V2.44h12.28zM15 18v-2h-3v2zM2 16V6H0v10zm25 0V6h-2v10z"/>
 </symbol><symbol id="icon-more" viewBox="0 0 15 16">
     
     <path class="cls-1" d="M7.5 14.55a6.339 6.339 0 0 1-6.145-6.51A6.707 6.707 0 0 1 3.75 2.83V6.4h1.5V.8H0v1.6h2.6c-.128.14-.69.27-.8.42a8.365 8.365 0 0 0 .853 11.27A7.206 7.206 0 0 0 7.5 16a4.665 4.665 0 0 0 .75-.04V14.5a6.256 6.256 0 0 1-.75.05zm5.813-1.51A8.268 8.268 0 0 0 15 8a7.76 7.76 0 0 0-7.5-8 4.671 4.671 0 0 0-.75.04V1.5a6.227 6.227 0 0 1 6.842 5.68 6.747 6.747 0 0 1-2.342 5.99V9.6h-1.5v5.6H15v-1.6h-2.79c.165-.18.953-.37 1.103-.56z"/>

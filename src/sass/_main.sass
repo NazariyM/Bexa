@@ -467,3 +467,94 @@
 			font-size: 18px
 		.icon + .icon
 			margin-left: 9px
+			
+// burger
+.burger
+	display: none
+	vertical-align: middle
+	margin-right: 20px
+	position: relative
+	padding: 0
+	width: 32px
+	height: 40px
+	font-size: 0
+	text-indent: -9999px
+	appearance: none
+	box-shadow: none
+	-webkit-tap-highlight-color: transparent
+	border-radius: none
+	border: none
+	cursor: pointer
+	z-index: 10
+	transition: background 0.3s
+	backface-visibility: hidden
+	background: none
+	+sm
+		display: inline-block
+	&:focus
+		outline: none
+	
+	span
+		display: block
+		position: absolute
+		top: 18px
+		left: 2px
+		right: 2px
+		height: 2px
+		background: #000
+		transition: background 0s 0.3s
+		&::after, &::before
+			position: absolute
+			display: block
+			left: 0
+			width: 100%
+			height: 2px
+			background-color: #000
+			content: ""
+		
+		&::before
+			top: -8px
+			transition: top 0.3s ease 0.3s, transform 0.3s ease 0s
+		
+		&::after
+			bottom: -8px
+			transition: bottom 0.3s ease 0.3s, transform 0.3s ease 0s
+	
+	&.is-active
+		span
+			background: none
+			&::before
+				top: 0
+				transform: rotate(45deg)
+				transition: top 0.3s ease 0s, transform 0.3s ease 0.3s
+			
+			&::after
+				bottom: 0
+				transform: rotate(-45deg)
+				transition: bottom 0.3s ease 0s, transform 0.3s ease 0.3s
+				
+.float-phone
+	display: none
+	position: fixed
+	right: 20px
+	bottom: 20px
+	width: 45px
+	z-index: 10
+	height: 45px
+	border-radius: 50%
+	background-color: #0079c0
+	-webkit-tap-highlight-color: transparent
+	outline: none
+	box-shadow: 0 0 10px #8a8a89
+	text-align: center
+	line-height: 45px
+	+tr(background-color .25s)
+	animation: mob-ring 1s infinite alternate linear
+	&:hover
+		background-color: #ed691f
+	+sm
+		display: block
+	.icon
+		font-size: 22px
+		
+		

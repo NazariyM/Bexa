@@ -200,12 +200,6 @@ h1, h2, h3, h4, h5, h6
 	animation: mouse-anim 1s infinite alternate
 	-webkit-tap-highlight-color: transparent
 	
-@keyframes mouse-anim
-	0%
-		bottom: -30px
-	100%
-		bottom: -40px
-		
 // inputs
 .input-default
 	width: 100%
@@ -279,3 +273,17 @@ h1, h2, h3, h4, h5, h6
 	border-radius: 50%
 	color: #ffffff
 	cursor: pointer
+
+// animations
+
+@keyframes mob-ring
+	0%
+		transform: rotate(30deg)
+	100%
+		transform: rotate(-30deg)
+		
+@keyframes mouse-anim
+	0%
+		bottom: -30px
+	100%
+		bottom: -40px

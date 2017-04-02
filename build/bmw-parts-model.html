@@ -13,7 +13,7 @@
   <body>
     <div class="out">
       <header class="header">
-        <div class="container">
+        <div class="header__container container">
           <div class="header__col">
             <a class="logo" href="#"> <img class="logo__img" src="img/logo.png" alt="img"></a>
           </div>
@@ -23,7 +23,9 @@
               <div class="contacts contacts--header"> <span class="contacts__street">ул. Грозненская, 65,</span> <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
               <div class="loc loc--header">
                 <a class="loc__current" href="#!"> <svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg> <span class="loc__text">Самара</span></a> <a class="loc__all" href="#!">адреса магазинов</a> </div>
-              <div class="userbar userbar--header">
+              <div class="userbar userbar--header"> <button class="js-menu-btn burger">
+                  <span></span>
+               </button>
                 <a class="userbar__item" href="#"> <svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg> </a>
                 <a class="userbar__item" href="#">
                   <div class="userbar__count userbar__count--present">1</div> <svg class="icon icon-box"><use xlink:href="img/sprite.svg#icon-box"></use></svg> </a>
@@ -35,7 +37,7 @@
             </div>
           </div>
           <div class="header__col">
-            <nav class="menu"> <button type="button" class="menu__btn js-menu-btn">Категории</button>
+            <nav class="menu">
               <ul class="menu__list js-menu">
                 <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Веха-клуб</a></li>
@@ -48,6 +50,7 @@
             </nav>
           </div>
         </div>
+        <a class="float-phone" href="tel:+78462791919"> <svg class="icon icon-mobile"><use xlink:href="img/sprite.svg#icon-mobile"></use></svg> </a>
       </header>
       <main class="main">
         <div class="screen screen--parts">

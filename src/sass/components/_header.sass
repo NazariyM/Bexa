@@ -1,9 +1,12 @@
 .header
 	padding: 30px 0 25px
-	+lg
-		padding: 20px 0
 	+sm
-		padding: 20px 0 0
+		position: relative
+		padding: 30px 0 75px
+	&__container
+		+sm
+			padding-bottom: 15px
+			border-bottom: 1px solid #e7e7e7
 	&__col
 		&:nth-child(1)
 			float: left
@@ -11,16 +14,15 @@
 			+lg
 				width: 28%
 			+sm
-				width: 60%
-				float: none
-				margin: 0 auto 15px
+				width: 150px
+				height: 50px
 		&:nth-child(2)
 			float: right
 			width: (822/1110 * 100%)
 			+lg
 				width: 71%
 			+sm
-				width: 100%
+				width: 50%
 		&:nth-child(3)
 			float: right
 			width: (822/1110 * 100%)
@@ -29,6 +31,8 @@
 				clear: both
 				width: 100%
 				padding-top: 20px
+			+sm
+				padding: 0
 	&__top
 		padding-bottom: 22px
 		padding-top: 12px
@@ -99,14 +103,12 @@
 		+lg
 			padding-left: 10px
 			padding-right: 10px
-		+xs
-			padding: 0 0 10px
 		.contacts__phone
 			+lg
 				display: block
 				text-align: center
-			+xs
-				display: inline-block
+		+sm
+			display: none
 	&--footer
 		margin: 15px 0
 		+md
@@ -124,7 +126,7 @@
 		& + &
 			margin-left: 17px
 			+sm
-				margin-left: 30px
+				margin-left: 24px
 		&:hover .icon
 			fill: $blue
 		.icon
@@ -153,16 +155,15 @@
 		+lg
 			padding-left: 20px
 		+sm
-			margin-top: 15px
-		+xs
-			padding-left: 0
+			position: absolute
+			left: 0
+			bottom: 18px
+			z-index: 1
 			width: 100%
-
+			padding: 0
 .menu
 	font-size: 0
 	text-align: center
-	+sm
-		margin: 0 -15px
 	&__list
 		+lg
 			max-width: 900px
@@ -170,6 +171,7 @@
 			+justify
 		+sm
 			display: none
+			padding-top: 15px
 			text-align-last: auto
 			text-align: center
 			line-height: 1
@@ -199,25 +201,6 @@
 		&:hover
 			border-bottom-color: transparent
 			color: $blue
-	&__btn
-		display: none
-		height: 50px
-		line-height: 50px
-		width: 100%
-		text-align: center
-		font-family: $PS
-		font-size: 18px
-		text-transform: uppercase
-		color: $blue
-		box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
-		background-color: #fbfafb
-		-webkit-tap-highlight-color: transparent
-		transition: color, background-color 1s
-		+sm
-			display: block
-		&.is-active
-			background-color: #0078bf
-			color: #ed691f
 
 .loc
 	&::after
@@ -229,7 +212,7 @@
 		background: #e7e7e7
 		width: 1px
 		height: 37px
-		+xs
+		+sm
 			display: none
 	&__text
 		display: inline-block
@@ -246,8 +229,8 @@
 			display: block
 			text-align: center
 			margin-right: 0
-		+xs
-			display: inline-block
+		+sm
+			text-align: left
 		.icon
 			display: inline-block
 			vertical-align: middle
@@ -264,6 +247,8 @@
 		color: #0078bf
 		font-family: $PL
 		font-size: 15px
+		+sm
+			padding: 5px 0 0
 		&::before
 			content: ''
 			position: absolute
@@ -285,6 +270,10 @@
 		font-size: 0
 		+lg
 			padding-left: 0
+		+sm
+			float: right
+			text-align: left
+			
 	&--footer
 		text-align: left
 		&::after
