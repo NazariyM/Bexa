@@ -2010,7 +2010,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0079c0;
   -webkit-tap-highlight-color: transparent;
   outline: none;
-  box-shadow: 0 0 10px #8a8a89;
+  box-shadow: 0 0 5px #000;
   text-align: center;
   line-height: 45px;
   transition: background-color 0.25s;
@@ -5133,6 +5133,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
   }
 
+  .logo--footer {
+    max-width: 170px;
+    margin: 0 auto;
+  }
+
   .contacts::before {
     display: none;
   }
@@ -5171,6 +5176,11 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 0;
   }
 
+  .menu__item:first-of-type {
+    padding-top: 20px;
+    border-top: 1px solid  #e7e7e7;
+  }
+
   .menu__link {
     display: block;
     font-size: 16px;
@@ -5192,6 +5202,10 @@ h1, h2, h3, h4, h5, h6 {
   .loc--header {
     float: right;
     text-align: left;
+  }
+
+  .loc--footer .loc__all {
+    padding: 0;
   }
 
   .offers__suggest {
