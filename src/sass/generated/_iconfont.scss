@@ -33,21 +33,20 @@ $icon-list-view: "\EA15";
 $icon-map-balloon: "\EA16";
 $icon-mc: "\EA17";
 $icon-minus: "\EA18";
-$icon-mobile: "\EA19";
-$icon-more: "\EA1A";
-$icon-od: "\EA1B";
-$icon-p: "\EA1C";
-$icon-pencil: "\EA1D";
-$icon-plus: "\EA1E";
-$icon-promo-calendar: "\EA1F";
-$icon-promo-pers: "\EA20";
-$icon-rubl: "\EA21";
-$icon-search: "\EA22";
-$icon-star: "\EA23";
-$icon-tile-view: "\EA24";
-$icon-user: "\EA25";
-$icon-visa: "\EA26";
-$icon-vk: "\EA27";
+$icon-more: "\EA19";
+$icon-od: "\EA1A";
+$icon-p: "\EA1B";
+$icon-pencil: "\EA1C";
+$icon-plus: "\EA1D";
+$icon-promo-calendar: "\EA1E";
+$icon-promo-pers: "\EA1F";
+$icon-rubl: "\EA20";
+$icon-search: "\EA21";
+$icon-star: "\EA22";
+$icon-tile-view: "\EA23";
+$icon-user: "\EA24";
+$icon-visa: "\EA25";
+$icon-vk: "\EA26";
 
 
 %icon {
@@ -90,7 +89,6 @@ $icon-vk: "\EA27";
 .icon-map-balloon:before { content: $icon-map-balloon; }
 .icon-mc:before { content: $icon-mc; }
 .icon-minus:before { content: $icon-minus; }
-.icon-mobile:before { content: $icon-mobile; }
 .icon-more:before { content: $icon-more; }
 .icon-od:before { content: $icon-od; }
 .icon-p:before { content: $icon-p; }

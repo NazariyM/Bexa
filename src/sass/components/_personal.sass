@@ -11,13 +11,22 @@
 		&:nth-child(1)
 			width: (255/825 * 100%)
 			margin-right: 30px
+			+lg
+				width: 47%
+			+sm
+				width: 100%
+				margin-bottom: 30px
 		&:nth-child(2)
 			width: (540/825 * 100%)
+			+lg
+				width: 48%
+			+sm
+				width: 100%
 	&__title
 		padding: 25px 0
 	&__more-btn
 		margin-top: 25px
-		padding: 0 25px
+		padding: 10px 25px
 		background-color: rgba(255, 255, 255, 0.25)
 		.icon-more
 			vertical-align: text-top
@@ -27,6 +36,8 @@
 		padding: 25px 25px 25px 20px
 		border-radius: 5px
 		border: 1px solid #e7e7e7
+		+lg
+			padding: 20px 15px 20px 15px
 	&__disc-title
 		margin-bottom: 8px
 		line-height: 1.2
@@ -57,6 +68,8 @@
 		color: #0078bf
 	&__disc-btn
 		margin-top: 25px
+		+md
+			width: 100%
 	&__card
 		margin-top: 20px
 		font-size: 16px
@@ -72,24 +85,43 @@
 			border-bottom-color: #bfd5e5
 		.icon
 			fill: #005895
+	&__man-btn
+		+lg
+			display: block
 	&__man
 		margin-bottom: 30px
 		+clr
+		+lg
+			display: table
+			width: 100%
+	&__man-title
+		+lg
+			padding-top: 15px
 	&__man-info
 		float: left
 		width: (190/490 * 100%)
 		margin-right: 20px
 		font-size: 16px
+		+lg
+			width: 100%
+			display: table-footer-group
+			margin-right: 0
+			float: none
 	&__man-look
 		float: left
 		width: (280/490 * 100%)
 		text-align: center
 		color: #40403e
 		font-family: $PL
+		+lg
+			width: 100%
+			display: table-header-group
+			float: none
 	&__man-photo
 		width: 100%
+		max-width: 280px
+		margin: 0 auto 25px
 		position: relative
-		margin-bottom: 25px
 		overflow: hidden
 		border-radius: 3px
 		&::after
@@ -129,13 +161,23 @@
 	&__data-info
 		margin: 20px 0 0
 		+clr
+		+lg
+			display: table
+			width: 100%
 	&__data-col
 		float: left
 		&:nth-child(1)
 			width: 60%
 			padding-right: 5px
+			+lg
+				width: 100%
+				padding-right: 0
 		&:nth-child(2)
 			width: 40%
+			+lg
+				width: 100%
+				float: none
+				display: table-header-group
 	&__data-item
 		margin-bottom: 10px
 		&:last-of-type

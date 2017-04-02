@@ -216,12 +216,6 @@ html {
   fill: initial;
 }
 
-.icon-mobile {
-  width: 1.23em;
-  height: 1em;
-  fill: #fff;
-}
-
 .icon-more {
   width: 0.94em;
   height: 1em;
@@ -1263,7 +1257,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .breadcrumbs {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #e7e7e7;
 }
 
@@ -2214,7 +2208,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .sb-promo__btn {
-  padding: 0 22px;
+  padding: 10px 22px;
 }
 
 .sb-promo__link {
@@ -3877,7 +3871,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .personal__more-btn {
   margin-top: 25px;
-  padding: 0 25px;
+  padding: 10px 25px;
   background-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -4002,8 +3996,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .personal__man-photo {
   width: 100%;
+  max-width: 280px;
+  margin: 0 auto 25px;
   position: relative;
-  margin-bottom: 25px;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -4464,7 +4459,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pay-table {
-  overflow-x: scroll;
+  overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 3px 3px rgba(14, 30, 46, 0.2);
   text-align: center;
@@ -4573,6 +4568,10 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-color: transparent;
 }
 
+.pay-table--personal .pay-table__table {
+  min-width: 715px;
+}
+
 .pay-table--personal td:nth-child(1) {
   width: 4.5%;
 }
@@ -4635,7 +4634,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .pay-table--basket .pay-table__table {
   min-width: 715px;
-  overflow-x: scroll;
 }
 
 .pay-table--basket td:nth-child(1) {
@@ -4895,8 +4893,66 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
 
+  .personal__col:nth-child(1) {
+    width: 47%;
+  }
+
+  .personal__col:nth-child(2) {
+    width: 48%;
+  }
+
+  .personal__disc, .personal__man, .personal__data, .personal__pays, .personal__limit {
+    padding: 20px 15px 20px 15px;
+  }
+
+  .personal__man-btn {
+    display: block;
+  }
+
+  .personal__man {
+    display: table;
+    width: 100%;
+  }
+
+  .personal__man-title {
+    padding-top: 15px;
+  }
+
+  .personal__man-info {
+    width: 100%;
+    display: table-footer-group;
+    margin-right: 0;
+    float: none;
+  }
+
+  .personal__man-look {
+    width: 100%;
+    display: table-header-group;
+    float: none;
+  }
+
+  .personal__data-info {
+    display: table;
+    width: 100%;
+  }
+
+  .personal__data-col:nth-child(1) {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .personal__data-col:nth-child(2) {
+    width: 100%;
+    float: none;
+    display: table-header-group;
+  }
+
   .basket__col--mod:nth-child(2) {
     padding-left: 15px;
+  }
+
+  .pay-table--basket .pay-table__has-actions td:nth-child(1) {
+    padding-left: 5px;
   }
 }
 
@@ -5073,6 +5129,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 
+  .screen--personal .screen__col:nth-child(1) {
+    display: none;
+  }
+
+  .screen--personal .screen__col:nth-child(2) {
+    width: 100%;
+  }
+
   .screen--basket .screen__col:nth-child(1) {
     display: none;
   }
@@ -5149,6 +5213,14 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: middle;
     margin-bottom: 0;
     margin-left: 10px;
+  }
+
+  .personal__disc-btn {
+    width: 100%;
+  }
+
+  .pay-table {
+    overflow: scroll;
   }
 }
 
@@ -5464,6 +5536,15 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 
+  .personal__col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .personal__col:nth-child(2) {
+    width: 100%;
+  }
+
   .basket__title {
     text-align: center;
   }
@@ -5580,6 +5661,10 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 15px;
     width: 100%;
     text-align: center;
+  }
+
+  .basket__data-link {
+    margin: 0 5px;
   }
 }
 

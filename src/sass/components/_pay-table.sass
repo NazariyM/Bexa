@@ -1,12 +1,14 @@
 // PAY TABLE
 .pay-table
-	overflow-x: scroll
+	overflow: hidden
 	border-radius: 5px
 	box-shadow: 0 3px 3px rgba(14, 30, 46, 0.2)
 	text-align: center
 	font-size: 14px
 	line-height: 1.25
 	color: #40403e
+	+md
+		overflow: scroll
 	td
 		padding:  18px 0
 	&__head
@@ -70,6 +72,8 @@
 			border-bottom-color: transparent
 	
 	&--personal
+		.pay-table__table
+			min-width: 715px
 		td:nth-child(1)
 			width: 4.5%
 		td:nth-child(2)
@@ -106,7 +110,6 @@
 	&--basket
 		.pay-table__table
 			min-width: 715px
-			overflow-x: scroll
 		td:nth-child(1)
 			width: 28%
 			text-align: left
@@ -127,3 +130,5 @@
 			padding: 11px 0
 		.pay-table__has-actions td:nth-child(1)
 			padding-left: 15px
+			+lg
+				padding-left: 5px

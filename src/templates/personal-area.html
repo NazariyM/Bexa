@@ -8,10 +8,10 @@
 
       <div class="screen screen--personal">
          <div class="container">
-            <div class="col-l">
+            <div class="screen__col">
                {% include "partials/_sidebar.html" %}
             </div>
-            <div class="col-r">
+            <div class="screen__col">
                <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
                      <li class="breadcrumbs__item">
@@ -28,7 +28,8 @@
                <div class="personal">
                   <h2 class="personal__title title-lg">ЛИЧНЫЙ КАБИНЕТ</h2>
                   <div class="personal__inner">
-                     <table class="pay-table pay-table--personal">
+                     <div class="pay-table pay-table--personal">
+                        <table class="pay-table__table">
                         <thead class="pay-table__head">
                            <tr>
                               <td>№</td>
@@ -64,6 +65,7 @@
                            </tr>
                         </tbody>
                      </table>
+                     </div>
                         <button class="personal__more-btn btn-border">{{ mixins.icon('more') }}<span>Показать еще</span></button>
                   </div>
                   <div class="personal__inner">
@@ -103,12 +105,12 @@
                      <div class="personal__col">
                         <div class="personal__man">
                            <div class="personal__man-info">
-                              <h4 class="title-md title-md--l">ВАШ ЛИЧНЫЙ МЕНЕДЖЕР</h4>
+                              <h4 class="personal__man-title title-md title-md--l">ВАШ ЛИЧНЫЙ МЕНЕДЖЕР</h4>
                               <div class="personal__man-name">Иванов Иван Иванович</div>
                               <a class="personal__man-phone" href="tel:79271234567">+7 927 123-45-67</a>
                               <a class="personal__man-phone" href="tel:78461234567">+7 846 123-45-67</a>
                               <div class="personal__man-add">доб. 123</div>
-                              <a class="btn-border btn-border--blue" href="#!">Начать чат</a>
+                              <a class="personal__man-btn btn-border btn-border--blue" href="#!">Начать чат</a>
                            </div>
                            <div class="personal__man-look">
                               <div class="personal__man-photo">
