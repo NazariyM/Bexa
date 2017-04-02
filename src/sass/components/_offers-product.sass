@@ -143,11 +143,42 @@
 	&--double
 		padding: 25px 5px 20px 5px
 		min-height: 0
+		max-width: 500px
+		+lg
+			padding: 20px 10px 0
+		+sm
+			display: none
+		.product__title
+			min-height: 40px
+		.product__title-md
+			margin-bottom: 5px
+		.product__inner-col
+			+lg
+				width: 100%
+				text-align: left
+				padding: 20px 0
+				display: block
+				border-bottom: 1px solid #e7e7e7
+				&:last-of-type
+					margin-bottom: 0
+					border-bottom-color: transparent
 		.product__descr
 			width: calc(100% - 140px)
+			+lg
+				width: calc(70% - 140px)
+		.product__in-stock
+			+lg
+				margin: 10px 0 0
 		.product__buy
 			margin-top: 20px
 			padding: 15px 0 10px 10px
+			+lg
+				display: inline-block
+				vertical-align: bottom
+				width: 31%
+				padding: 15px 0 0 0
+				border: none
+	
 	&__inner
 		font-size: 0
 		+clr
@@ -174,6 +205,9 @@
 		width: 50%
 		display: inline-block
 		vertical-align: middle
+		+lg
+			width: 100%
+			display: block
 	&__inner-half
 		width: 45%
 		float: left

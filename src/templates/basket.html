@@ -8,10 +8,10 @@
 
       <section class="screen screen--basket">
          <div class="container">
-            <div class="screen__col col-l">
+            <div class="screen__col">
                {% include "partials/_sidebar.html" %}
             </div>
-            <div class="screen__col col-r">
+            <div class="screen__col">
 
                <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
@@ -32,7 +32,8 @@
                   <h2 class="basket__title title-lg">КОРЗИНА ТОВАРОВ</h2>
                   <div class="basket__form-wrap">
                      <form action="#!">
-                        <table class="pay-table pay-table--basket">
+                        <div class="pay-table pay-table--basket">
+                           <table class="pay-table__table">
                            <thead class="pay-table__head">
                            <tr>
                               <td>Наименование</td>
@@ -83,6 +84,7 @@
                            </tr>
                            </tbody>
                         </table>
+                        </div>
                         <div class="basket__disc-wrap">
                            <div class="basket__col basket__disc">
                               <h5 class="basket__disc-title title-xs">Применить купон на скидку или дисконтную карту</h5>
@@ -179,7 +181,7 @@
                      <div class="basket__container">
                         <div class="basket__data">
                            <div class="basket__data-top">
-                              <h2 class="basket__data-title title-lg">ШАГ 2. ДАННЫЕ ПЛАТЕЛЬЩИКА</h2>
+                              <h2 class="basket__cat-title title-lg">ШАГ 2. ДАННЫЕ ПЛАТЕЛЬЩИКА</h2>
                               <div class="basket__data-log">или <a href="#!">Войти</a></div>
                               <div class="basket__data-face">
                                  <a class="basket__data-link link-default is-active" href="#!">физическое лицо</a><span>/</span><a class="basket__data-link link-default" href="#!">юридическое лицо</a>
@@ -215,7 +217,7 @@
                   </div>
                   <div class="basket__container">
                      <div class="basket__delivery">
-                        <h2 class="basket__delivery-title title-lg">ШАГ 3. ДОСТАВКА И ОПЛАТА</h2>
+                        <h2 class="basket__cat-title title-lg">ШАГ 3. ДОСТАВКА И ОПЛАТА</h2>
                         <form action="#!">
                            <div class="basket__delivery-inn">
                               <div class="basket__delivery-col">
@@ -276,7 +278,7 @@
                               </div>
                               <div class="basket__delivery-col">
                                  <div class="call-timer">
-                                    <button class="btn-border btn-border--blue">отправить заказ на проверку</button>
+                                    <button class="call-timer__btn btn-border btn-border--blue">отправить заказ на проверку</button>
                                     <div class="call-timer__count">9:59</div>
                                  </div>
                                  <div class="basket__delivery-tip basket__delivery-tip--full">Далее наши менеджеры проверят все позиции заказа и наличие. Вы получите уведомление. Время ожидани менее 10 минут.</div>

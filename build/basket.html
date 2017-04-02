@@ -55,7 +55,7 @@
       <main class="main">
         <section class="screen screen--basket">
           <div class="container">
-            <div class="screen__col col-l">
+            <div class="screen__col">
               <div class="sb">
                 <div class="sb-menu">
                   <div class="sb-menu__item js-sb-item">
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="screen__col col-r">
+          <div class="screen__col">
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"> <a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
@@ -106,47 +106,49 @@
               <h2 class="basket__title title-lg">КОРЗИНА ТОВАРОВ</h2>
               <div class="basket__form-wrap">
                 <form action="#!">
-                  <table class="pay-table pay-table--basket">
-                    <thead class="pay-table__head">
-                      <tr>
-                        <td>Наименование</td>
-                        <td>Артикул</td>
-                        <td>Цена</td>
-                        <td>Комментарий</td>
-                        <td>кол-во</td>
-                        <td>Сумма</td>
-                        <td></td>
-                      </tr>
-                    </thead>
-                    <tbody class="pay-table__body">
-                      <tr class="pay-table__has-actions">
-                        <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
-                        <td>4014766073051</td>
-                        <td>1 904р.</td>
-                        <td>
-                          <div class="pay-table__field "> <input class="input-default" type="text" title="Ваш комментарий" placeholder="Ваш комментарий" name=""> </div>
-                        </td>
-                        <td> <input type="number" value="1" name=""> </td>
-                        <td>1 904р.</td>
-                        <td> <button class="pay-table__act-btn" type="button">
+                  <div class="pay-table pay-table--basket">
+                    <table class="pay-table__table">
+                      <thead class="pay-table__head">
+                        <tr>
+                          <td>Наименование</td>
+                          <td>Артикул</td>
+                          <td>Цена</td>
+                          <td>Комментарий</td>
+                          <td>кол-во</td>
+                          <td>Сумма</td>
+                          <td></td>
+                        </tr>
+                      </thead>
+                      <tbody class="pay-table__body">
+                        <tr class="pay-table__has-actions">
+                          <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
+                          <td>4014766073051</td>
+                          <td>1 904р.</td>
+                          <td>
+                            <div class="pay-table__field "> <input class="input-default" type="text" title="Ваш комментарий" placeholder="Ваш комментарий" name=""> </div>
+                          </td>
+                          <td> <input type="number" value="1" name=""> </td>
+                          <td>1 904р.</td>
+                          <td> <button class="pay-table__act-btn" type="button">
 <svg class="icon icon-cancel"><use xlink:href="img/sprite.svg#icon-cancel"></use></svg>
 </button> </td>
-                      </tr>
-                      <tr class="pay-table__has-actions">
-                        <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
-                        <td>4014766073051</td>
-                        <td>1 904р.</td>
-                        <td>
-                          <div class="pay-table__field "> <input class="input-default" type="text" title="Ваш комментарий" placeholder="Ваш комментарий" name=""> </div>
-                        </td>
-                        <td> <input type="number" value="1" name=""> </td>
-                        <td>1 904р.</td>
-                        <td> <button class="pay-table__act-btn" type="button">
+                        </tr>
+                        <tr class="pay-table__has-actions">
+                          <td>Addinol Тормозная жидкость Brake Fluid DOT 5.1 (1л)</td>
+                          <td>4014766073051</td>
+                          <td>1 904р.</td>
+                          <td>
+                            <div class="pay-table__field "> <input class="input-default" type="text" title="Ваш комментарий" placeholder="Ваш комментарий" name=""> </div>
+                          </td>
+                          <td> <input type="number" value="1" name=""> </td>
+                          <td>1 904р.</td>
+                          <td> <button class="pay-table__act-btn" type="button">
 <svg class="icon icon-cancel"><use xlink:href="img/sprite.svg#icon-cancel"></use></svg>
 </button> </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                   <div class="basket__disc-wrap">
                     <div class="basket__col basket__disc">
                       <h5 class="basket__disc-title title-xs">Применить купон на скидку или дисконтную карту</h5>
@@ -217,7 +219,7 @@
                 <div class="basket__container">
                   <div class="basket__data">
                     <div class="basket__data-top">
-                      <h2 class="basket__data-title title-lg">ШАГ 2. ДАННЫЕ ПЛАТЕЛЬЩИКА</h2>
+                      <h2 class="basket__cat-title title-lg">ШАГ 2. ДАННЫЕ ПЛАТЕЛЬЩИКА</h2>
                       <div class="basket__data-log">или <a href="#!">Войти</a></div>
                       <div class="basket__data-face"> <a class="basket__data-link link-default is-active" href="#!">физическое лицо</a><span>/</span><a class="basket__data-link link-default" href="#!">юридическое лицо</a> </div>
                     </div>
@@ -240,7 +242,7 @@
               </div>
               <div class="basket__container">
                 <div class="basket__delivery">
-                  <h2 class="basket__delivery-title title-lg">ШАГ 3. ДОСТАВКА И ОПЛАТА</h2>
+                  <h2 class="basket__cat-title title-lg">ШАГ 3. ДОСТАВКА И ОПЛАТА</h2>
                   <form action="#!">
                     <div class="basket__delivery-inn">
                       <div class="basket__delivery-col">
@@ -278,7 +280,7 @@
                         </div>
                       </div>
                       <div class="basket__delivery-col">
-                        <div class="call-timer"> <button class="btn-border btn-border--blue">отправить заказ на проверку</button>
+                        <div class="call-timer"> <button class="call-timer__btn btn-border btn-border--blue">отправить заказ на проверку</button>
                           <div class="call-timer__count">9:59</div>
                         </div>
                         <div class="basket__delivery-tip basket__delivery-tip--full">Далее наши менеджеры проверят все позиции заказа и наличие. Вы получите уведомление. Время ожидани менее 10 минут.</div> <a class="link-default link-default--black link-default--icon" href="#!">со мной не связались

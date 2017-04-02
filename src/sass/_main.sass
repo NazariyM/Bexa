@@ -46,7 +46,7 @@
 		position: relative
 		display: inline-block
 		vertical-align: top
-		margin-right: 19px
+		margin: 0 19px 10px 0
 		&::after
 			display: inline-block
 			position: absolute
@@ -299,131 +299,6 @@
 			border-bottom: 1px solid #cfcfce
 			+tr(all .2s)
 			
-// PAY TABLE
-.pay-table
-	overflow: hidden
-	border-radius: 5px
-	box-shadow: 0 3px 3px rgba(14, 30, 46, 0.2)
-	text-align: center
-	font-size: 14px
-	line-height: 1.25
-	color: #40403e
-	td
-		padding:  18px 0
-	&__head
-		background-color: #0078bf
-		td
-			padding: 19px 0
-			text-transform: uppercase
-			font-size: 13px
-			color: #ffffff
-			font-family: $PS
-			border-right: 1px solid #1783c3
-			&:last-child
-				border-right: none
-	&__body
-		tr
-			&:nth-child(2n)
-				background-color: #f5f5f5
-		td
-			vertical-align: middle
-			border-right: 1px solid #e8e8e8
-			&:last-child
-				border-right: none
-	&__has-actions td
-		padding: 18px 0
-	&__act
-		font-size: 0
-	&__act-btn
-		display: inline-block
-		vertical-align: middle
-		font-size: 17px
-		background-color: transparent
-		& + &
-			margin-left: 8px
-		.icon-file
-			fill: darken(#0079c0, 10)
-	&__field .input-default
-		height: 30px
-		line-height: 30px
-		
-	&--search
-		text-align: left
-		.pay-table__head td:nth-child(1),
-		.pay-table__head td:nth-child(2)
-			padding: 17px 20px
-		.pay-table__body td
-			padding: 15px 30px
-			border-bottom: 1px solid #e8e8e8
-		a
-			text-transform: none
-			font-size: 16px
-			font-family: $PR
-		.icon
-			position: absolute
-			top: 3px
-			right: -1px
-		.pay-table__body td:nth-child(2) a
-			padding-right: 33px
-		.pay-table__body td:nth-child(2) span
-			border-bottom-color: transparent
-	
-	&--personal
-		td:nth-child(1)
-			width: 4.5%
-		td:nth-child(2)
-			width: 10%
-		td:nth-child(3)
-			width: 16%
-		td:nth-child(4)
-			width: 33%
-		td:nth-child(5)
-			width: 16.5%
-		td:nth-child(6)
-			width: 11.5%
-		
-	&--model
-		td:nth-child(1)
-			width: 9.5%
-		td:nth-child(2)
-			width: 7.5%
-		td:nth-child(3)
-			width: 6%
-		td:nth-child(4)
-			width: 6.5%
-		td:nth-child(5)
-			width: 3.5%
-		td:nth-child(6)
-			width: 3.5%
-		td:nth-child(7)
-			width: 3.5%
-		.link-default--black
-			font-family: $PR
-		.pay-table__body td
-			padding: 12px 0
-	
-	&--basket
-		td:nth-child(1)
-			width: 28%
-			text-align: left
-			padding: 18px 13px
-		td:nth-child(2)
-			width: 17%
-		td:nth-child(3)
-			width: 10%
-		td:nth-child(4)
-			width: 20%
-		td:nth-child(5)
-			width: 10%
-		td:nth-child(6)
-			width: 9%
-		td:nth-child(7)
-			width: 6%
-		.pay-table__has-actions td
-			padding: 11px 0
-		.pay-table__has-actions td:nth-child(1)
-			padding-left: 15px
-
 // drop
 .drop
 	padding: 25px 20px 20px 20px
@@ -431,6 +306,10 @@
 	border: 1px solid #e7e7e7
 	background-color: #ffffff
 	text-align: left
+	+lg
+		padding: 20px 10px 20px 10px
+	+sm
+		text-align: center
 	&__descr
 		margin: 8px 0
 		line-height: (24/15)
@@ -439,6 +318,9 @@
 		margin: 10px 0
 		color: #8a8a89
 		font-size: 14px
+	&__format, &__descr
+		+lg
+			margin: 15px 0
 	&__loaded
 		margin-bottom: 20px
 		color: #005895
@@ -458,7 +340,13 @@
 		margin-left: 20px
 		font-size: 25px
 		font-family: $PEB
-		
+		+xs
+			margin-left: 5px
+	&__btn
+		+xs
+			padding-left: 10px
+			padding-right: 10px
+
 // payment
 .payment
 	.icon-visa
@@ -479,10 +367,8 @@
 	height: 40px
 	font-size: 0
 	text-indent: -9999px
-	appearance: none
 	box-shadow: none
 	-webkit-tap-highlight-color: transparent
-	border-radius: none
 	border: none
 	cursor: pointer
 	z-index: 10

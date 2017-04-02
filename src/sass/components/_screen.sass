@@ -12,32 +12,17 @@
 		position: relative
 		&:nth-child(1)
 			width: 23%
+			float: left
 			+lg
 				width: 26%
-			+md
-				width: 35%
-			+sm
-				float: none
-				width: 100%
-				display: table-footer-group
 		&:nth-child(2)
+			float: right
 			width: 74.32433%
 			+lg
 				width: 72%
-			+md
-				width: 63.5%
-			+sm
-				float: none
-				display: table-header-group
-				width: 100%
 		&:nth-child(3)
+			float: right
 			width: 74.32433%
-			+lg
-				width: 72%
-			+md
-				width: 100%
-			+sm
-				display: none
 	&__sld-wrapp
 		+md
 			width: 100%
@@ -136,7 +121,36 @@
 		padding: 50px 0 20px
 	&--basket
 		padding: 50px 0 85px
+		+xs
+			padding: 30px 0 30px
+		.screen__col:nth-child(1)
+			+md
+				display: none
+		.screen__col:nth-child(2)
+			+md
+				width: 100%
 	&--home
+		.screen__col:nth-child(1)
+			+md
+				width: 35%
+			+sm
+				float: none
+				width: 100%
+				display: table-footer-group
+		.screen__col:nth-child(2)
+			+md
+				width: 63.5%
+			+sm
+				float: none
+				display: table-header-group
+				width: 100%
+		.screen__col:nth-child(3)
+			+lg
+				width: 72%
+			+md
+				width: 100%
+			+sm
+				display: none
 		.search__title
 			+sm
 				display: none

@@ -2,31 +2,52 @@
 	padding: 25px 0 0
 	&__title
 		margin-bottom: 20px
+		+sm
+			text-align: center
+	&__cat-title
+		text-align: center
+		+sm
+			font-size: 21px
+			margin: 0 -15px
 	&__container
 		max-width: 670px
 		margin: 0 auto
 	&__inn
 		padding-bottom: 60px
 		border-bottom: 1px solid #e7e7e7
+		+clr
+		+sm
+			padding-bottom: 30px
 		& + &
 			padding-top: 5px
 			padding-bottom: 45px
-		+clr
+			+sm
+				padding-bottom: 25px
 	&__col
 		float: left
 		text-align: center
 		&:nth-child(1)
 			width: 60%
+			+sm
+				width: 100%
 		&:nth-child(2)
 			width: 40%
+			+sm
+				width: 100%
+				margin-top: 25px
+				padding: 0
 		&--mod
 			&:nth-child(1)
 				width: 65.5%
 			&:nth-child(2)
 				padding-left: 30px
 				width: 34.5%
+				+lg
+					padding-left: 15px
 	&__form-wrap
 		margin-bottom: 40px
+		+sm
+			margin-bottom: 0
 	&__disc-wrap
 		margin: 35px 0 0
 		+clr
@@ -37,21 +58,35 @@
 		&-inn
 			margin-top: 13px
 			font-size: 0
+			+sm
+				margin-top: 20px
 		&-col
 			display: inline-block
 			vertical-align: middle
 			&:nth-child(1)
 				width: 45%
 				padding-right: 15px
+				+xs
+					width: 100%
+					padding-right: 0
 			&:nth-child(2)
 				width: 55%
+				+xs
+					padding-top: 15px
+					width: 100%
+					text-align: center
 		&-field
 			max-width: 410px
+			+sm
+				max-width: none
 			&--captcha
 				position: relative
 				max-width: 205px
+				+sm
+					margin: 0 auto
+					max-width: 200px
 				input
-					width: 205px
+					width: 100%
 					padding-right: 60px
 		&-captcha
 			position: absolute
@@ -70,6 +105,8 @@
 	&__total
 		font-size: 17px
 		text-align: right
+		+sm
+			text-align: left
 		&-field
 			margin-bottom: 12px
 			color: #8a8a89
@@ -81,6 +118,8 @@
 	&__data
 		padding: 40px 0 0
 		text-align: center
+		+sm
+			padding: 20px 0 0
 		&-log, &-title
 			display: inline-block
 			vertical-align: middle
@@ -119,6 +158,8 @@
 			vertical-align: top
 			width: calc(33.33333% - 30px)
 			margin: 0 15px
+			+sm
+				width: calc(100% - 30px)
 		&-field--captcha
 			max-width: 250px
 			width: auto
@@ -135,10 +176,14 @@
 			top: 15px
 		&-btn
 			margin-top: 20px
-			padding: 0 30px
-	
+			padding: 10px 30px
+			+sm
+				width: 100%
+				margin-top: 0
 	&__delivery
 		padding-top: 50px
+		+sm
+			padding-top: 25px
 		&-inn
 			margin-top: 35px
 			+clr
@@ -147,10 +192,16 @@
 			&:nth-child(1)
 				width: 50%
 				padding-right: 60px
+				+sm
+					width: 100%
+					padding-right: 0
+					padding-bottom: 15px
 				.basket__delivery-field
 					margin-bottom: 15px
 			&:nth-child(2)
 				width: 50%
+				+sm
+					width: 100%
 				.basket__delivery-field
 					margin-bottom: 18px
 			&:nth-child(3)
