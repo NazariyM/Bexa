@@ -8,10 +8,10 @@
 
       <div class="screen screen--parts">
          <div class="container">
-            <div class="col-l">
+            <div class="screen__col">
                {% include "partials/_sidebar.html" %}
             </div>
-            <div class="col-r">
+            <div class="screen__col">
                <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
                      <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
@@ -41,91 +41,94 @@
                      </div>
                   </div>
                   <div class="search__table-wrap">
-                     <table class="pay-table pay-table--model">
-                        <thead class="pay-table__head">
-                        <tr>
-                           <td>Модификация</td>
-                           <td>Год выпуска</td>
-                           <td>Код двигателя</td>
-                           <td>Кузов</td>
-                           <td>Двигатель</td>
-                           <td>Мощность</td>
-                           <td>Топливо</td>
-                        </tr>
-                        </thead>
-                        <tbody class="pay-table__body">
-                        <tr>
-                           <td>
-                              <div class="tip">?</div>
-                              <a class="link-default link-default--black" href="#!">
-                                 <span>ВMW 1 (F20) 125</span>
-                              </a>
-                           </td>
-                           <td>03/2015-</td>
-                           <td>B47 D20 B</td>
-                           <td>Наклонная задняя часть</td>
-                           <td>2л</td>
-                           <td>224</td>
-                           <td>дизель</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="tip">?</div>
-                              <a class="link-default link-default--black" href="#!">
-                                 <span>ВMW 1 (F20) 125</span>
-                              </a>
-                           </td>
-                           <td>03/2015-</td>
-                           <td>B47 D20 B</td>
-                           <td>Наклонная задняя часть</td>
-                           <td>2л</td>
-                           <td>224</td>
-                           <td>дизель</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="tip">?</div>
-                              <a class="link-default link-default--black" href="#!">
-                                 <span>ВMW 1 (F20) 125</span>
-                              </a>
-                           </td>
-                           <td>03/2015-</td>
-                           <td>B47 D20 B</td>
-                           <td>Наклонная задняя часть</td>
-                           <td>2л</td>
-                           <td>224</td>
-                           <td>дизель</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="tip">?</div>
-                              <a class="link-default link-default--black" href="#!">
-                                 <span>ВMW 1 (F20) 125</span>
-                              </a>
-                           </td>
-                           <td>03/2015-</td>
-                           <td>B47 D20 B</td>
-                           <td>Наклонная задняя часть</td>
-                           <td>2л</td>
-                           <td>224</td>
-                           <td>дизель</td>
-                        </tr>
-                        <tr>
-                           <td>
-                              <div class="tip">?</div>
-                              <a class="link-default link-default--black" href="#!">
-                                 <span>ВMW 1 (F20) 125</span>
-                              </a>
-                           </td>
-                           <td>03/2015-</td>
-                           <td>B47 D20 B</td>
-                           <td>Наклонная задняя часть</td>
-                           <td>2л</td>
-                           <td>224</td>
-                           <td>дизель</td>
-                        </tr>
-                        </tbody>
-                     </table>
+                     <div class="pay-table pay-table--model">
+                        <table class="pay-table__table">
+                           <thead class="pay-table__head">
+                           <tr>
+                              <td>Модификация</td>
+                              <td>Год выпуска</td>
+                              <td>Код двигателя</td>
+                              <td>Кузов</td>
+                              <td>Двигатель</td>
+                              <td>Мощность</td>
+                              <td>Топливо</td>
+                           </tr>
+                           </thead>
+                           <tbody class="pay-table__body">
+                           <tr>
+                              <td>
+                                 <div class="tip">?</div>
+                                 <a class="link-default link-default--black" href="#!">
+                                    <span>ВMW 1 (F20) 125</span>
+                                 </a>
+                              </td>
+                              <td>03/2015-</td>
+                              <td>B47 D20 B</td>
+                              <td>Наклонная задняя часть</td>
+                              <td>2л</td>
+                              <td>224</td>
+                              <td>дизель</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div class="tip">?</div>
+                                 <a class="link-default link-default--black" href="#!">
+                                    <span>ВMW 1 (F20) 125</span>
+                                 </a>
+                              </td>
+                              <td>03/2015-</td>
+                              <td>B47 D20 B</td>
+                              <td>Наклонная задняя часть</td>
+                              <td>2л</td>
+                              <td>224</td>
+                              <td>дизель</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div class="tip">?</div>
+                                 <a class="link-default link-default--black" href="#!">
+                                    <span>ВMW 1 (F20) 125</span>
+                                 </a>
+                              </td>
+                              <td>03/2015-</td>
+                              <td>B47 D20 B</td>
+                              <td>Наклонная задняя часть</td>
+                              <td>2л</td>
+                              <td>224</td>
+                              <td>дизель</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div class="tip">?</div>
+                                 <a class="link-default link-default--black" href="#!">
+                                    <span>ВMW 1 (F20) 125</span>
+                                 </a>
+                              </td>
+                              <td>03/2015-</td>
+                              <td>B47 D20 B</td>
+                              <td>Наклонная задняя часть</td>
+                              <td>2л</td>
+                              <td>224</td>
+                              <td>дизель</td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <div class="tip">?</div>
+                                 <a class="link-default link-default--black" href="#!">
+                                    <span>ВMW 1 (F20) 125</span>
+                                 </a>
+                              </td>
+                              <td>03/2015-</td>
+                              <td>B47 D20 B</td>
+                              <td>Наклонная задняя часть</td>
+                              <td>2л</td>
+                              <td>224</td>
+                              <td>дизель</td>
+                           </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
                   </div>
                </div>
             </div>

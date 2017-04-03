@@ -73,6 +73,8 @@
 
 // POPULAR LINKS
 .pop-links
+	+sm
+		display: none
 	&__inner
 		+clr
 	&__title
@@ -113,6 +115,8 @@
 		vertical-align: top
 		width: calc(33.33333% - 20px)
 		margin: 0 10px
+		+xs
+			width: calc(100% - 20px)
 		&--full
 			width: calc(100% - 20px)
 	&__btn
@@ -124,11 +128,16 @@
 	&__inner
 		margin-top: 30px
 		+clr
+		+lg
+			margin-top: 15px
 	&__scale
 		float: left
 		width: 200px
 		height: 44px
 		+clr
+		+lg
+			float: none
+			margin: 0 auto
 		i
 			float: left
 			width: (100%/33)
@@ -140,10 +149,16 @@
 	&__status
 		float: left
 		margin-left: 15px
+		+lg
+			float: none
+			margin: 15px auto 0
+			text-align: center
 		&-text
 			margin-bottom: 8px
 			font-size: 18px
 			color: #40403e
+			+lg
+				margin-bottom: 15px
 			
 // parts
 .parts
@@ -164,6 +179,10 @@
 		float: left
 		padding: 0 15px
 		width: 50%
+		+sm
+			width: 100%
+			&:nth-child(2)
+				padding: 25px 15px
 	&__sub-list
 		display: none
 	&__list-title
@@ -258,6 +277,7 @@
 			font-size: 30px
 			color: #8a8a89
 			font-family: $PL
+			text-align: left
 		&-item
 			position: relative
 			display: inline-block
@@ -265,6 +285,8 @@
 			margin: 0 5px
 			text-decoration: none
 			text-align: center
+			+lg
+				margin: 0 10px
 			&:hover .cars__brand-name
 				border-bottom-color: transparent
 			&::before
@@ -277,6 +299,8 @@
 				background-color: #e8e8e8
 				content: ''
 				pointer-events: none
+				+lg
+					right: -16px
 		&-logo
 			height: 90px
 			width: 81px
@@ -388,7 +412,7 @@
 		right: 2px
 		height: 2px
 		background: #000
-		transition: background 0s 0.3s
+		transition: background 0.3s
 		&::after, &::before
 			position: absolute
 			display: block
@@ -400,11 +424,11 @@
 		
 		&::before
 			top: -8px
-			transition: top 0.3s ease 0.3s, transform 0.3s ease 0s
+			transition: top 0.2s ease 0.2s, transform 0.2s ease 0s
 		
 		&::after
 			bottom: -8px
-			transition: bottom 0.3s ease 0.3s, transform 0.3s ease 0s
+			transition: bottom 0.2s ease 0.2s, transform 0.2s ease 0s
 	
 	&.is-active
 		span

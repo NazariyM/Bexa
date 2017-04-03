@@ -6,12 +6,12 @@
 
    <main class="main">
 
-      <section class="screen">
+      <section class="screen screen--search">
          <div class="container">
-            <div class="screen__col col-l">
+            <div class="screen__col">
                {% include "partials/_sidebar.html" %}
             </div>
-            <div class="screen__col col-r">
+            <div class="screen__col">
 
                <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
@@ -38,32 +38,35 @@
                   </div>
                   <div class="search__table-wrap">
                      <div class="search__result">По вашему запросу найдено <span>2 товара:</span></div>
-                     <table class="pay-table pay-table--search">
-                        <thead class="pay-table__head">
-                        <tr>
-                           <td>Производитель</td>
-                           <td>Наименование</td>
-                        </tr>
-                        </thead>
-                        <tbody class="pay-table__body">
-                        <tr>
-                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
-                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
-                        </tr>
-                        <tr>
-                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
-                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
-                        </tr>
-                        <tr>
-                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
-                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
-                        </tr>
-                        <tr>
-                           <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
-                           <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
-                        </tr>
-                        </tbody>
-                     </table>
+                     <div class="pay-table pay-table--search">
+                        <table class="pay-table__table">
+                           <thead class="pay-table__head">
+                           <tr>
+                              <td>Производитель</td>
+                              <td>Наименование</td>
+                           </tr>
+                           </thead>
+                           <tbody class="pay-table__body">
+                           <tr>
+                              <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                              <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                           </tr>
+                           <tr>
+                              <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                              <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                           </tr>
+                           <tr>
+                              <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                              <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                           </tr>
+                           <tr>
+                              <td><a class="link-default link-default--black" href="#!">Toyota</a></td>
+                              <td><a class="link-default link-default--black link-default--icon" href="#!"><span>Свеча зажигания 9091901164</span>{{ mixins.icon('arrow') }}</a></td>
+                           </tr>
+                           </tbody>
+                        </table>
+                     </div>
+
                   </div>
                </div>
 

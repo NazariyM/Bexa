@@ -1,6 +1,6 @@
 // PAY TABLE
 .pay-table
-	overflow: hidden
+	overflow-x: hidden
 	border-radius: 5px
 	box-shadow: 0 3px 3px rgba(14, 30, 46, 0.2)
 	text-align: center
@@ -8,13 +8,14 @@
 	line-height: 1.25
 	color: #40403e
 	+md
-		overflow: scroll
+		overflow-x: scroll
 	td
 		padding:  18px 0
 	&__head
 		background-color: #0078bf
 		td
 			padding: 19px 0
+			vertical-align: middle
 			text-transform: uppercase
 			font-size: 13px
 			color: #ffffff
@@ -51,13 +52,17 @@
 		padding: 0 10px
 	
 	&--search
-		text-align: left
+		.pay-table__table
+			min-width: 500px
+			text-align: left
 		.pay-table__head td:nth-child(1),
 		.pay-table__head td:nth-child(2)
 			padding: 17px 20px
 		.pay-table__body td
 			padding: 15px 30px
 			border-bottom: 1px solid #e8e8e8
+			+sm
+				padding: 10px 20px
 		a
 			text-transform: none
 			font-size: 16px
@@ -88,6 +93,8 @@
 			width: 11.5%
 	
 	&--model
+		.pay-table__table
+			min-width: 735px
 		td:nth-child(1)
 			width: 9.5%
 		td:nth-child(2)
@@ -106,6 +113,8 @@
 			font-family: $PR
 		.pay-table__body td
 			padding: 12px 0
+			+sm
+				padding: 5px 0
 	
 	&--basket
 		.pay-table__table

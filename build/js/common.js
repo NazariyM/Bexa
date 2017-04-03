@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+	// main nav toggle
 	(function () {
 		var menu = $('.js-menu'),
 		    menuBtn = $('.js-menu-btn');
@@ -44,11 +45,13 @@ $(document).ready(function () {
 		}
 	})();
 
+	// next section scroll
 	$('.js-scroll-next').on('click', function () {
 		var scrollDistance = $(this).closest('section').next('section').offset().top;
 		$('html, body').animate({ scrollTop: scrollDistance }, 1000);
 	});
 
+	// show more items
 	(function () {
 		var offersRow = $('.js-offers-row'),
 		    offersItem = offersRow.children(),
@@ -109,6 +112,25 @@ $(document).ready(function () {
 			e.preventDefault();
 			$(this).next($partsSublist).slideToggle(200);
 			$(this).toggleClass('is-active');
+		});
+	})();
+
+	// change yacht view: list/grid
+	(function () {
+		var $viewBtn = $('.js-view-search').children(),
+		    $viewContainer = $('.js-view-container');
+
+		$viewBtn.on('click', function (e) {
+			e.preventDefault();
+			if ($(this).hasClass('grid')) {
+				$(this).siblings($viewBtn).removeClass('is-active');
+				$(this).addClass('is-active');
+				$viewContainer.removeClass('list').addClass('grid');
+			} else if ($(this).hasClass('list')) {
+				$(this).siblings($viewBtn).removeClass('is-active');
+				$(this).addClass('is-active');
+				$viewContainer.removeClass('grid').addClass('list');
+			}
 		});
 	})();
 

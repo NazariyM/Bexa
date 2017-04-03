@@ -53,9 +53,9 @@
         <a class="float-phone" href="tel:+78462791919"> <svg class="icon icon-mobile"><use xlink:href="img/sprite.svg#icon-mobile"></use></svg> </a>
       </header>
       <main class="main">
-        <div class="screen screen--parts-sm">
+        <div class="screen screen--parts">
           <div class="container">
-            <div class="col-l">
+            <div class="screen__col">
               <div class="sb">
                 <div class="sb-menu">
                   <div class="sb-menu__item js-sb-item">
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="col-r">
+          <div class="screen__col">
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
@@ -104,7 +104,7 @@
             </div>
             <div class="search search--parts">
               <h2 class="search__title title-lg title-lg--b">АВТОЗАПЧАСТИ ДЛЯ BMW 1 (F20) 125 d В САМАРЕ</h2>
-              <div class="search__inner">
+              <div class="search__inner search__inner--has-view">
                 <div class="search__form-wrapp">
                   <form class="search__form" action="#">
                     <div class="search__form-field search__form-field--simple"> <input class="search__form-input" type="text" name="" title="Поиск"> <button class="search__form-btn" type="submit">
@@ -121,15 +121,15 @@
                     </div>
                   </form>
                 </div>
-                <div class="search__view"> <button class="search__view-btn is-active" type="button">
+                <div class="search__view js-view-search"> <button class="search__view-btn grid is-active" type="button">
 <svg class="icon icon-tile-view"><use xlink:href="img/sprite.svg#icon-tile-view"></use></svg>
-</button> <button class="search__view-btn" type="button">
+</button> <button class="search__view-btn list" type="button">
 <svg class="icon icon-list-view"><use xlink:href="img/sprite.svg#icon-list-view"></use></svg>
 </button> </div>
               </div>
             </div>
-            <div class="offers offers--view">
-              <div class="offers__row js-offers-row">
+            <div class="offers offers--parts">
+              <div class="offers__row js-offers-row js-view-container">
                 <div class="offers__col">
                   <div class="product product--item">
                     <div class="product__pic product__pic--item"> <img src="img/hslider1.jpg" alt="img"> </div>
@@ -701,7 +701,7 @@
 <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
 </button> </div>
     </section>
-    <section class="address">
+    <section class="address address--home">
       <div class="container">
         <h2 class="address__title title-lg title-lg--sb">ТОРГОВАЯ СЕТЬ "ВЕХА"</h2>
         <div class="address__inner">

@@ -6,12 +6,12 @@
 
    <main class="main">
 
-      <div class="screen screen--parts-sm">
+      <div class="screen screen--parts">
          <div class="container">
-            <div class="col-l">
+            <div class="screen__col">
                {% include "partials/_sidebar.html" %}
             </div>
-            <div class="col-r">
+            <div class="screen__col">
                <div class="breadcrumbs">
                   <ul class="breadcrumbs__list">
                      <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
@@ -23,7 +23,7 @@
 
                <div class="search search--parts">
                   <h2 class="search__title title-lg title-lg--b">АВТОЗАПЧАСТИ ДЛЯ BMW 1 (F20) 125 d В САМАРЕ</h2>
-                  <div class="search__inner">
+                  <div class="search__inner search__inner--has-view">
                      <div class="search__form-wrapp">
                         <form class="search__form" action="#">
                            <div class="search__form-field search__form-field--simple">
@@ -36,14 +36,14 @@
                            </div>
                         </form>
                      </div>
-                     <div class="search__view">
-                        <button class="search__view-btn is-active" type="button">{{ mixins.icon('tile-view') }}</button>
-                        <button class="search__view-btn" type="button">{{ mixins.icon('list-view') }}</button>
+                     <div class="search__view js-view-search">
+                        <button class="search__view-btn grid is-active" type="button">{{ mixins.icon('tile-view') }}</button>
+                        <button class="search__view-btn list" type="button">{{ mixins.icon('list-view') }}</button>
                      </div>
                   </div>
                </div>
-               <div class="offers offers--view">
-                  <div class="offers__row js-offers-row">
+               <div class="offers offers--parts">
+                  <div class="offers__row js-offers-row js-view-container">
                      <div class="offers__col">
                         <div class="product product--item">
                            <div class="product__pic product__pic--item">

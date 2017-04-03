@@ -1,8 +1,10 @@
 .search
 	&__view
-		float: left
-		margin-top: 14px
+		margin-top: 15px
 		font-size: 0
+		white-space: nowrap
+		+xs
+			display: none
 	&__view-btn
 		background-color: transparent
 		font-size: 18px
@@ -15,12 +17,21 @@
 	&__title
 		margin-bottom: 10px
 		text-transform: none
+		+sm
+			font-size: 23px
 	&__inner
 		+clr
+	&__inner--has-view
+		display: flex
+		justify-content: space-around
+		+xs
+			flex-direction: column
 	&__form-wrapp
-		float: left
 		margin-right: 15px
 		width: (760/825 * 100%)
+		+xs
+			width: 100%
+			margin-right: 0
 		&--full
 			width: 100%
 			float: none
@@ -194,12 +205,14 @@
 	&__list-wrap
 		padding: 30px 0 0
 	&__list
-		padding-bottom: 30px
+		padding-bottom: 20px
 		+clr
 		&-item
 			float: left
-			& + &
-				margin-left: 4px
+			margin-bottom: 10px
+			margin-right: 4px
+			&:last-child
+				margin-right: 0
 			&.is-active a
 				color: #fff
 				background-color: rgba(0, 120, 191, 0.94)

@@ -5,6 +5,7 @@
 		border-top: 1px solid $border-gray
 		font-size: 0
 		+sm
+			text-align: center
 			padding-top: 25px
 	&__title
 		display: inline-block
@@ -17,6 +18,7 @@
 			margin-right: 0
 			margin-bottom: 10px
 			font-size: 24px
+			width: 100%
 	&__btn
 		display: inline-block
 		vertical-align: middle
@@ -37,6 +39,56 @@
 		font-size: 0
 		+sm
 			margin: 0 -5px
+			text-align: center
+	&__row.list
+		.offers__col
+			width: 100%
+		.product--item
+			padding: 15px
+			min-height: 0
+			+clr
+		.product__discount--item
+			top: 15px
+			left: 15px
+		.product__pic--item
+			display: inline-block
+			margin-left: 30px
+			+sm
+				float: left
+				width: 100px
+				height: 100px
+		.product__descr--item
+			display: inline-table
+			width: calc(100% - 165px)
+			+sm
+				width: 76%
+				display: block
+				float: left
+		.product__category
+			display: block
+		.product__title
+			min-height: 0
+			margin: 0
+		.product__title br
+			display: none
+		.product__price--item
+			margin: 0
+			display: table-cell
+			text-align: right
+			width: 22%
+			+sm
+				display: block
+				width: 100%
+		.product__price-old
+			display: table-cell
+			width: 15%
+			padding-right: 10px
+			text-align: right
+			+sm
+				display: block
+				width: 100%
+				padding-right: 0
+				
 	&__col
 		display: inline-block
 		vertical-align: top
@@ -54,6 +106,7 @@
 			padding: 0 5px 10px
 		+xs
 			width: 100%
+			max-width: 350px
 	&__col-xs
 		width: (350/1100 * 100%)
 		float: right
@@ -65,14 +118,17 @@
 		margin-right: 30px
 		& + &
 			margin-right: 0
+			+sm
+				margin-right: auto
 		+lg
 			margin-right: 25px
 		+md
 			margin-right: 30px
 		+sm
 			width: 100%
-			margin-right: 0
-			margin-bottom: 15px
+			max-width: 390px
+			margin: 0 auto 15px
+			float: none
 	&__col-md
 		+clr
 		float: left
@@ -84,7 +140,10 @@
 			margin-top: 30px
 			width: 100%
 			+sm
-				margin-top: 0
+				width: 100%
+				max-width: 390px
+				margin: 0 auto 15px
+				float: none
 	&__more
 		text-align: center
 		+sm
@@ -95,10 +154,16 @@
 		+sm
 			padding-bottom: 15px
 	
-	&--view
+	&--parts
 		padding-bottom: 40px
 		.offers__col
 			width: 33.33333%
+			&:nth-child(6) ~ .offers__col
+				display: none
+			+sm
+				width: 50%
+			+xs
+				width: 100%
 		
 // PRODUCTS
 .product
@@ -125,7 +190,7 @@
 			vertical-align: -2px
 			+md
 				bottom: auto
-				top: -50px
+				top: -45px
 		.product__arrow--prev
 			.icon
 				+rotate(-90)
@@ -143,15 +208,16 @@
 	&--double
 		padding: 25px 5px 20px 5px
 		min-height: 0
-		max-width: 500px
 		+lg
 			padding: 20px 10px 0
+		+md
+			max-width: 500px
 		+sm
 			display: none
 		.product__title
 			min-height: 40px
 		.product__title-md
-			margin-bottom: 5px
+			margin-bottom: 25px
 		.product__inner-col
 			+lg
 				width: 100%
@@ -247,17 +313,9 @@
 		color: $gray
 		font-family: $PL
 		line-height: 1
+		text-decoration: line-through
 		&--sm
 			font-size: 16px
-		&::after
-			position: absolute
-			top: 53%
-			left: 0
-			right: 0
-			height: 1px
-			background-color: $gray
-			z-index: 1
-			content: ''
 	&__discount-text
 		position: relative
 		z-index: 1
@@ -314,6 +372,10 @@
 		vertical-align: middle
 		width: 135px
 		height: 135px
+		img
+			display: block
+			height: 100%
+			width: 100%
 		&--item
 			display: block
 			margin: 0 auto

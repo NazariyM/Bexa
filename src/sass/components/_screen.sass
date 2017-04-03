@@ -109,26 +109,57 @@
 		
 	&--parts
 		padding: 50px 0 40px
-	&--parts-sm
-		padding: 50px 0 30px
-	&--contacts
-		padding: 50px 0
-	&--personal
-		padding: 50px 0 90px
+		+md
+			padding: 20px 0 30px
+		+sm
+			padding-bottom: 0
 		.screen__col:nth-child(1)
 			+md
 				display: none
 		.screen__col:nth-child(2)
 			+md
 				width: 100%
-	&--personal-sm
-		padding: 50px 0 80px
+	&--contacts
+		padding: 50px 0
+		+sm
+			padding: 20px 0 40px
+		.screen__col:nth-child(1)
+			+lg
+				display: none
+		.screen__col:nth-child(2)
+			+lg
+				width: 100%
+	&--personal
+		padding: 50px 0 90px
+		+md
+			padding: 20px 0 30px
+		.screen__col:nth-child(1)
+			+md
+				display: none
+		.screen__col:nth-child(2)
+			+md
+				width: 100%
 	&--foreign
 		padding: 50px 0 20px
+		.screen__col:nth-child(1)
+			+md
+				display: none
+		.screen__col:nth-child(2)
+			+md
+				width: 100%
 	&--basket
 		padding: 50px 0 85px
-		+xs
-			padding: 30px 0 30px
+		+md
+			padding: 20px 0 30px
+		.screen__col:nth-child(1)
+			+md
+				display: none
+		.screen__col:nth-child(2)
+			+md
+				width: 100%
+	&--search
+		+md
+			padding: 20px 0 45px
 		.screen__col:nth-child(1)
 			+md
 				display: none
