@@ -1,0 +1,366 @@
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+   {% include "partials/_header.html" %}
+
+   <main class="main">
+
+      <div class="page">
+         <div class="container">
+            <div class="page__bar">
+               <div class="page__bar-col">
+                  <button class="catalog-btn" type="button"><span>Каталог</span>{{ mixins.icon('arr-bott') }}</button>
+               </div>
+               <div class="page__bar-col search">
+                  <div class="search__form-wrapp search__form-wrapp--full">
+                     <form class="search__form" action="#">
+                        <div class="search__form-field search__form-field--simple">
+                           <input class="search__form-input" type="text" name="" title="Поиск">
+                           <button class="search__form-btn" type="submit">{{ mixins.icon('search') }}</button>
+                           <ul class="search__tags">
+                              <li>Амортизатор <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                              </li>
+                              <li>Камаз <span class="search__tags-remove">{{ mixins.icon('close') }}</span>
+                              </li>
+                           </ul>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <div class="page__bar-breadcrumbs breadcrumbs">
+                  <ul class="breadcrumbs__list">
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Главная</a></li>
+                     <li class="breadcrumbs__item"><a href="#!" class="breadcrumbs__link link-default">Интернет
+                                                                                                       магазин</a></li>
+                     <li class="breadcrumbs__item is-current"><a href="#!" class="breadcrumbs__link link-default">Иномарки</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <section class="review">
+               <div class="review__title">Моторное масло ENEOS Super Gasoline, 5W30 SM, 4 л, синтетическое</div>
+               <div class="review__in">
+                  <div class="review__col">
+                     <div class="review__slider js-review-slider">
+                        <div class="review__slider-item">
+                           <div class="review__slider-img-wrap">
+                              <div class="review__slider-img" style="background-image: url(img/content/product-1_lg.jpg)"></div>
+                           </div>
+                        </div>
+                        <div class="review__slider-item">
+                           <div class="review__slider-img-wrap">
+                              <div class="review__slider-img" style="background-image: url(img/content/product-2_lg.jpg)"></div>
+                           </div>
+                        </div>
+                        <div class="review__slider-item">
+                           <div class="review__slider-img-wrap"><div class="review__slider-img" style="background-image: url(img/content/product-1_lg.jpg)"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="review__slider-thumbs js-review-slider-thumbs">
+                        <div class="review__slider-thumbs-item">
+                           <div class="review__slider-thumbs-img-wrap">
+                              <div class="review__slider-thumbs-img" style="background-image: url(img/content/product-1_sm.jpg)"></div>
+                           </div>
+                        </div>
+                        <div class="review__slider-thumbs-item">
+                           <div class="review__slider-thumbs-img-wrap">
+                              <div class="review__slider-thumbs-img" style="background-image: url(img/content/product-2_sm.jpg)"></div>
+                           </div>
+                        </div>
+                        <div class="review__slider-thumbs-item">
+                           <div class="review__slider-thumbs-img-wrap">
+                              <div class="review__slider-thumbs-img" style="background-image: url(img/content/product-1_sm.jpg)"></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="review__data review__col">
+                     <P class="review__data-text">Высококачественное синтетическое моторное масло с уникальными эксплуатационными характеристиками. Специально разработано для обеспечения надежной работы высокофорсированных бензиновых двигателей нового поколения, в том числе оборудованных турбонаддувом.</P>
+                     <div class="review__data-data">
+                        <div class="review__data-row">
+                           <div class="review__data-name">Вязкость (SAE)</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">5W-30</div>
+                        </div>
+                        <div class="review__data-row">
+                           <div class="review__data-name">Тип</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">Синтетическое</div>
+                        </div>
+                        <div class="review__data-row">
+                           <div class="review__data-name">Тип двигателя</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">Бензиновый</div>
+                        </div>
+                        <div class="review__data-row">
+                           <div class="review__data-name">Объем, л</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">4</div>
+                        </div>
+                        <div class="review__data-row">
+                           <div class="review__data-name">Производитель</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">Nippon Oil Co</div>
+                        </div>
+                        <div class="review__data-row">
+                           <div class="review__data-name">Страна производства</div>
+                           <div class="review__data-dot"></div>
+                           <div class="review__data-definition">Корея</div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="review__info review__col">
+                     <div class="review__info-price">
+                        <div class="review__info-prices">
+                           <div class="review__info-price-old"><span>1 995</span></div>
+                           <div class="review__info-price-new"><span>1 890</span>{{ mixins.icon('rubl') }}</div>
+                           <div class="review__info-price-disc"><span>-15%</span>{{ mixins.icon('discount') }}</div>
+                        </div>
+                        <div class="review__info-price-buy">
+                           <a class="review__info-buy-btn btn" href="#!">{{ mixins.icon('basket-btn') }}КУПИТЬ</a>
+                           <div class="review__info-price-stock">В наличии <span>459</span> шт</div>
+                        </div>
+                     </div>
+                     <div class="review__info-stock">
+                        <div class="review__info-stock-label">В наличии</div>
+                        <div class="review__info-stock-str">ул. Грозненская, 65</div>
+                        <div class="review__info-stock-str">ул. Литвинова, 302Б</div>
+                        <div class="review__info-stock-str">ул. Грозненская, 65</div>
+                        <div class="review__info-stock-str">ул. Литвинова, 302Б</div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+         </div>
+      </div>
+
+      <section class="offers">
+         <div class="container">
+            <div class="offers__row js-offers-row">
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider1.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Аккумуляторы</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Аккумулятор Mega <br>BATT 6ст-60 АПЗ</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-1.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Шины и диски</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Toyo TYDRB <br>205/55 R16 91V</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider1.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Аккумуляторы</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Аккумулятор Mega <br>BATT 6ст-60 АПЗ</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-1.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Шины и диски</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Toyo TYDRB <br>205/55 R16 91V</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="offers__col">
+                  <div class="product product--item">
+                     <div class="product__pic product__pic--item">
+                        <img src="img/hslider3-2.jpg" alt="img">
+                     </div>
+                     <div class="product__descr product__descr--item">
+                        <a class="product__category" href="#!">Моторное масло</a>
+                        <div class="product__discount product__discount--item">
+                           {{ mixins.icon('discount') }}
+                           <span class="product__discount-text">-15%</span>
+                        </div>
+                        <a class="product__title" href="#">Масло 10W40 MOBIL <br>ULTRA 4L</a>
+                        <div class="product__price-old">4 995</div>
+                        <div class="product__price product__price--item">3 050 {{ mixins.icon('rubl') }}</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="offers__more">
+               <a class="offers__btn btn-border js-more-offers" href="#!">{{ mixins.icon('more') }}
+                  <span>Еще предложения</span></a>
+            </div>
+         </div>
+      </section>
+
+      {% include "partials/_read.html" %}
+
+      {% include "partials/_about.html" %}
+
+      {% include "partials/_address.html" %}
+
+   </main>
+
+   {% include "partials/_footer.html" %}
+
+{% endblock %}

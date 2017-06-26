@@ -464,3 +464,41 @@
 		display: block
 	.icon
 		font-size: 22px
+
+.catalog-btn
+	position: relative
+	height: 49px
+	padding: 0 38px
+	line-height: 49px
+	box-shadow: 0 2px 3px rgba(14, 30, 46, 0.2)
+	border-radius: 5px
+	background-color: #005895
+	font-size: 13px
+	color: #fff
+	font-family: $PS
+	text-transform: uppercase
+	+tr(background .2s)
+	.icon
+		position: absolute
+		font-size: 6px
+		top: calc(50% - 4px)
+		right: 15px
+		fill: #fff
+	&:hover
+		background-color: darken(#005895, 5)
+
+.page
+	padding: 60px 0 0
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.06)
+	&__bar
+		font-size: 0
+		&-col
+			display: inline-block
+			vertical-align: middle
+			&:nth-child(1)
+				width: 135px
+				margin-right: 20px
+			&:nth-child(2)
+				width: calc(100% - 155px)
+		&-breadcrumbs
+			padding: 25px 0 15px

@@ -1,6 +1,10 @@
 "use strict";
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 /*! jQuery v3.0.0 | (c) jQuery Foundation | jquery.org/license */
 !function (a, b) {
@@ -3892,6 +3896,94 @@ $(document).ready(function () {
         slidesToScroll: 1
       }
     }]
+  });
+
+  $('.js-review-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    draggable: false,
+    asNavFor: '.js-review-slider-thumbs'
+  });
+
+  $('.js-review-slider-thumbs').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.js-review-slider',
+    dots: false,
+    arrows: false,
+    centerMode: false,
+    focusOnSelect: true,
+    variableWidth: true
+  });
+});
+$(function () {
+  var Dropdown = function () {
+    function Dropdown(config) {
+      _classCallCheck(this, Dropdown);
+
+      this._dropdownClass = config.dropdownClass;
+      this._dropdown = config.dropdown;
+      this._open = this._dropdown.find(config.open);
+
+      this._active = "is-open";
+
+      this._openOnClick();
+      this._closeOnItemClick();
+      this._closeOnBody();
+    }
+
+    _createClass(Dropdown, [{
+      key: "_openOnClick",
+      value: function _openOnClick() {
+        var _this2 = this;
+
+        this._open.click(function (e) {
+          if (_this2._dropdown.hasClass(_this2._active)) {
+            _this2.close();
+            return;
+          } else {
+            _this2.close();
+          }
+
+          _this2._dropdown.addClass(_this2._active);
+        });
+      }
+    }, {
+      key: "_closeOnItemClick",
+      value: function _closeOnItemClick() {
+        var _this3 = this;
+
+        this._dropdown.find("li").click(function (e) {
+          _this3.close();
+        });
+      }
+    }, {
+      key: "_closeOnBody",
+      value: function _closeOnBody() {
+        var _this4 = this;
+
+        $('body').click(function (e) {
+          if (!$(e.target).closest(_this4._dropdownClass).length) _this4.close();
+        });
+      }
+    }, {
+      key: "close",
+      value: function close() {
+        $(this._dropdownClass).removeClass(this._active);
+      }
+    }]);
+
+    return Dropdown;
+  }();
+
+  $(".js-dropdown").each(function () {
+    new Dropdown({
+      dropdown: $(this),
+      dropdownClass: ".js-dropdown",
+      open: ".js-dropdown-open"
+    });
   });
 });
 $(document).ready(function () {

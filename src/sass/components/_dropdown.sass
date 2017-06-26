@@ -1,0 +1,89 @@
+.dropdown
+	position: relative
+	color: $blue
+	transition: color 0.25s ease
+	user-select: none
+	+hover
+		&:before
+			transform: translate3d(0, 0, 0) scaleX(1)
+	&.is-open
+		.dropdown
+			&__list
+				opacity: 1
+				visibility: visible
+		&:before
+			transform: translate3d(0, 0, 0) scaleX(1)
+		.icon-down
+			transform: translate3d(0, 0, 0) rotate(180deg)
+	&__visible
+		position: relative
+		display: inline-block
+		vertical-align: top
+		cursor: pointer
+	&__text
+		padding: 0 13px 3px 0
+		margin-left: 20px
+		+text-overflow
+		font-size: 16px
+		border-bottom: 1px dashed rgba(#000000,.5)
+	.icon-geo
+		position: absolute
+		top: 2px
+		left: -3px
+		fill: $white
+		+sm
+			top: 0
+			font-size: 16px
+		+xs
+			top: 1px
+			font-size: 19px
+	.icon-down
+		position: absolute
+		top: 50%
+		+tr(fill)
+		right: 0
+		margin-top: -2px
+		fill: $blue
+		font-size: 4px
+		transition: transform 0.25s ease
+	&__list
+		position: absolute
+		z-index: 2
+		top: 105%
+		left: 50%
+		transform: translateX(-50%)
+		opacity: 0
+		visibility: hidden
+		background: #005895
+		border-radius: 0 0 6px 6px
+		transition: opacity 0.25s ease, visibilty 0.25s ease
+		overflow: hidden
+		a
+			display: block
+			padding: 0 20px
+			color: $white
+			line-height: 30px
+			text-align: center
+			transition: background 0.25s ease, color 0.25s ease
+			cursor: pointer
+			font-size: 15px
+			white-space: nowrap
+			text-decoration: none
+			&:hover
+				color: #fff
+				background: #ed691f
+				
+	&--header
+		display: inline-block
+		vertical-align: middle
+		.icon
+			position: absolute
+			top: -4px
+			left: -95px
+			font-size: 20px
+			pointer-events: none
+		.dropdown__text
+			margin-left: 5px
+			padding: 0
+			color: #000000
+			font-family: $PS

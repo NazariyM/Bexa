@@ -14,44 +14,53 @@
     <div class="out">
       <header class="header">
         <div class="header__container container">
-          <div class="header__col">
-            <a class="logo" href="#"> <img class="logo__img" src="img/logo.png" alt="img"></a>
-          </div>
+          <div class="header__col"> <a class="logo" href="#">
+            <img class="logo__img" src="img/logo.png" alt="img"></a> </div>
           <div class="header__col">
             <div class="header__top">
-              <div class="header__payment payment"> <svg class="icon icon-mc"><use xlink:href="img/sprite.svg#icon-mc"></use></svg> <svg class="icon icon-visa"><use xlink:href="img/sprite.svg#icon-visa"></use></svg> </div>
-              <div class="contacts contacts--header"> <span class="contacts__street">ул. Грозненская, 65,</span> <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
-              <div class="loc loc--header">
-                <a class="loc__current" href="#!"> <svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg> <span class="loc__text">Самара</span></a> <a class="loc__all" href="#!">адреса магазинов</a> </div>
-              <div class="userbar userbar--header"> <button class="js-menu-btn burger">
+              <div class="contacts contacts--header header__top-col"> <span class="contacts__street">ул. Новозаводская, 2</span> <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
+              <div class="header__top-col">
+                <div class="header__city-label">Ваш город:</div>
+                <div class="dropdown js-dropdown dropdown--header">
+                  <div class="dropdown__visible js-dropdown-open">
+                    <div class="dropdown__text">Самара</div> <svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg> </div>
+                  <div class="dropdown__list">
+                    <ul>
+                      <li><a href="#!">Самара</a></li>
+                      <li><a href="#!">Москва</a></li>
+                      <li><a href="#!">Самара</a></li>
+                      <li><a href="#!">Москва</a></li>
+                    </ul>
+                  </div>
+                </div> <a class="header__social-link" href="#!"> 
+<svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+</a> </div>
+              <div class="userbar header__top-col"> <button class="js-menu-btn burger">
                   <span></span>
-               </button>
-                <a class="userbar__item" href="#"> <svg class="icon icon-user"><use xlink:href="img/sprite.svg#icon-user"></use></svg> </a>
+               </button> <a class="userbar__item userbar__item--user" href="#"></a>
                 <a class="userbar__item" href="#">
-                  <div class="userbar__count userbar__count--present">1</div> <svg class="icon icon-box"><use xlink:href="img/sprite.svg#icon-box"></use></svg> </a>
+                  <div class="userbar__count">3</div> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> </a>
                 <a class="userbar__item" href="#">
-                  <div class="userbar__count">3</div> <svg class="icon icon-heart"><use xlink:href="img/sprite.svg#icon-heart"></use></svg> </a>
-                <a class="userbar__item" href="#">
-                  <div class="userbar__count">9</div> <svg class="icon icon-basket"><use xlink:href="img/sprite.svg#icon-basket"></use></svg> </a>
+                  <div class="userbar__count userbar__count--cart">9</div> <svg class="icon icon-basket"><use xlink:href="img/sprite.svg#icon-basket"></use></svg> </a>
               </div>
             </div>
           </div>
           <div class="header__col">
             <nav class="menu">
               <ul class="menu__list js-menu">
-                <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Веха-клуб</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Каталог товаров</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Гарантии</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
               </ul>
             </nav>
           </div>
-        </div>
-        <a class="float-phone" href="tel:+78462791919"> <svg class="icon icon-mobile"><use xlink:href="img/sprite.svg#icon-mobile"></use></svg> </a>
-      </header>
+        </div> <a class="float-phone" href="tel:+78462791919">
+<svg class="icon icon-mobile"><use xlink:href="img/sprite.svg#icon-mobile"></use></svg>
+</a> </header>
       <main class="main">
         <section class="screen screen--search">
           <div class="container">
@@ -61,26 +70,32 @@
                   <div class="sb-menu__item js-sb-item">
                     <div class="sb-menu__title"> <svg class="icon icon-car"><use xlink:href="img/sprite.svg#icon-car"></use></svg> <span>ДЛЯ АВТОМОБИЛЕЙ</span> <svg class="icon icon-arrow-sld"><use xlink:href="img/sprite.svg#icon-arrow-sld"></use></svg> </div>
                     <div class="sb-menu__content js-sb-content">
-                      <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> иномарки</a>
-                      <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> отечественные</a>
-                    </div>
+                    <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+иномарки</a> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+отечественные</a> </div>
                   </div>
                   <div class="sb-menu__item js-sb-item">
                     <div class="sb-menu__title"> <svg class="icon icon-car-village"><use xlink:href="img/sprite.svg#icon-car-village"></use></svg> <span>ДЛЯ СЕЛЬХОЗМАШИН</span> <svg class="icon icon-arrow-sld"><use xlink:href="img/sprite.svg#icon-arrow-sld"></use></svg> </div>
                     <div
-                      class="sb-menu__content js-sb-content">
-                      <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> иномарки</a>
-                      <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> отечественные</a>
-                  </div>
+                      class="sb-menu__content js-sb-content"> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+иномарки</a> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+отечественные</a> </div>
                 </div>
                 <div class="sb-menu__item js-sb-item">
                   <div class="sb-menu__title"> <svg class="icon icon-details"><use xlink:href="img/sprite.svg#icon-details"></use></svg> <span>ШИНЫ, МАСЛА, АКБ <br>И ПРОЧЕЕ</span> <svg class="icon icon-arrow-sld"><use xlink:href="img/sprite.svg#icon-arrow-sld"></use></svg> </div>
-                  <div class="sb-menu__content js-sb-content">
-                    <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> иномарки</a>
-                    <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> отечественные</a>
-                    <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> иномарки</a>
-                    <a class="sb-menu__link" href="#"> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> отечественные</a>
-                  </div>
+                  <div class="sb-menu__content js-sb-content"> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+иномарки</a> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+отечественные</a> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+иномарки</a> <a class="sb-menu__link" href="#">
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+отечественные</a> </div>
                 </div>
               </div>
               <div class="sb-promo">
@@ -190,8 +205,9 @@
                       <div class="product__price-old">1 995</div>
                       <div class="product__price">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                     </div>
-                    <div class="product__buy">
-                      <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                    <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                       <div class="product__in-stock">В наличии <span>459</span> шт</div>
                     </div>
                   </div>
@@ -203,8 +219,9 @@
                       <div class="product__price-old">1 995</div>
                       <div class="product__price">2 995 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                     </div>
-                    <div class="product__buy">
-                      <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                    <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                       <div class="product__in-stock">В наличии <span>459</span> шт</div>
                     </div>
                   </div>
@@ -224,8 +241,9 @@
                       <div class="product__price-old">1 995</div>
                       <div class="product__price">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                     </div>
-                    <div class="product__buy">
-                      <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                    <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                       <div class="product__in-stock">В наличии <span>459</span> шт</div>
                     </div>
                   </div>
@@ -237,8 +255,9 @@
                       <div class="product__price-old">1 995</div>
                       <div class="product__price">2 995 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                     </div>
-                    <div class="product__buy">
-                      <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                    <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                       <div class="product__in-stock">В наличии <span>459</span> шт</div>
                     </div>
                   </div>
@@ -258,8 +277,9 @@
                         <div class="product__price-old">4 995</div>
                         <div class="product__price">3 050 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                       </div>
-                      <div class="product__buy">
-                        <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                      <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                         <div class="product__in-stock">В наличии <span>459</span> шт</div>
                       </div>
                     </div>
@@ -270,8 +290,9 @@
                         <div class="product__price-old">4 995</div>
                         <div class="product__price">3 370 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                       </div>
-                      <div class="product__buy">
-                        <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                      <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                         <div class="product__in-stock">В наличии <span>459</span> шт</div>
                       </div>
                     </div>
@@ -284,8 +305,9 @@
                         <div class="product__price-old">4 995</div>
                         <div class="product__price">3 050 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                       </div>
-                      <div class="product__buy">
-                        <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                      <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                         <div class="product__in-stock">В наличии <span>459</span> шт</div>
                       </div>
                     </div>
@@ -296,8 +318,9 @@
                         <div class="product__price-old">4 995</div>
                         <div class="product__price">3 370 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
                       </div>
-                      <div class="product__buy">
-                        <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
+                      <div class="product__buy"> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a>
                         <div class="product__in-stock">В наличии <span>459</span> шт</div>
                       </div>
                     </div>
@@ -317,9 +340,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Колодки передние 1324ОР</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
                 <div class="product__brand">
                   <div class="product__brand-pic"> <img src="img/vertical2.png" alt="img"> </div>
@@ -327,9 +350,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Масло 10W40 MOBIL ULTRA 4L</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
                 <div class="product__brand">
                   <div class="product__brand-pic"> <img src="img/vertical3.png" alt="img"> </div>
@@ -337,9 +360,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Аккумулятор Mega BATT 6ст-60 АПЗ</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
                 <div class="product__brand">
                   <div class="product__brand-pic"> <img src="img/vertical1.png" alt="img"> </div>
@@ -347,9 +370,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Колодки передние 1324ОР</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
                 <div class="product__brand">
                   <div class="product__brand-pic"> <img src="img/vertical1.png" alt="img"> </div>
@@ -357,9 +380,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Колодки передние 1324ОР</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
                 <div class="product__brand">
                   <div class="product__brand-pic"> <img src="img/vertical1.png" alt="img"> </div>
@@ -367,9 +390,9 @@
                     <div class="product__brand-text"> <a href="#!" class="product__brand-title">Колодки передние 1324ОР</a>
                       <div class="product__price-old product__price-old--sm">1 995</div>
                       <div class="product__price product__price--sm">1 890 <svg class="icon icon-rubl"><use xlink:href="img/sprite.svg#icon-rubl"></use></svg> </div>
-                    </div>
-                    <a href="#!" class="btn product__buy-btn"> <svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg> купить</a>
-                  </div>
+                    </div> <a href="#!" class="btn product__buy-btn">
+<svg class="icon icon-basket-btn"><use xlink:href="img/sprite.svg#icon-basket-btn"></use></svg>
+купить</a> </div>
                 </div>
               </div>
             </div>
@@ -497,9 +520,10 @@
             </div>
           </div>
         </div>
-        <div class="offers__more">
-          <a class="offers__btn btn-border js-more-offers" href="#!"> <svg class="icon icon-more"><use xlink:href="img/sprite.svg#icon-more"></use></svg> <span>Еще предложения</span></a>
-        </div>
+        <div class="offers__more"> <a class="offers__btn btn-border js-more-offers" href="#!">
+<svg class="icon icon-more"><use xlink:href="img/sprite.svg#icon-more"></use></svg>
+
+                <span>Еще предложения</span></a> </div>
       </div>
     </section>
     <section class="read">
@@ -517,9 +541,12 @@
             <div class="read__article-title">ШИНЫ С ТЕХНОЛОГИЕЙ RUNFLAT</div>
             <p class="read__article-descr">RunFlat — это запатентованная технология, в основе которой лежит максимальное усиление шинной боковины — корда. После прокола такая шина продолжает держаться на диске, и на ней еще можно проехать около 80 км. Из соображений безопасности шины
               RunFlat могут устанавливаться только на автомобили с датчиками давления воздуха в шинах.</p>
-            <div class="read__article-read"> <a class="read__article-link" href="#!">ЧИТАТЬ СТАТЬЮ</a>
-              <a class="read__article-link read__article-link--all" href="#!"> <span>Все статьи</span> <svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg> </a>
-            </div> <img class="read__article-img" src="img/art-wheel.svg" alt="img"> </article>
+            <div class="read__article-read"> <a class="read__article-link" href="#!">ЧИТАТЬ СТАТЬЮ</a> <a class="read__article-link read__article-link--all" href="#!">
+                  <span>Все статьи</span>
+                  
+<svg class="icon icon-arrow"><use xlink:href="img/sprite.svg#icon-arrow"></use></svg>
+
+              </a> </div> <img class="read__article-img" src="img/art-wheel.svg" alt="img"> </article>
         </div>
         <div class="read__col-side">
           <div class="read__news">
@@ -623,8 +650,8 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__col">
-          <a class="logo logo--footer" href="#"> <img class="logo__img" src="img/logo.png" alt="logo"></a>
+        <div class="footer__col"> <a class="logo logo--footer" href="#">
+					<img class="logo__img" src="img/logo.png" alt="logo"></a>
           <div class="footer__copyright">Межрегиональная ассоциация «ВЕХА» <br>&copy; 1992 — 2017</div>
         </div>
         <div class="footer__col">
@@ -643,16 +670,21 @@
           </div>
         </div>
         <div class="footer__col">
-          <div class="loc loc--footer">
-            <a class="loc__current" href="#!"> <svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg> <span class="loc__text">Самара</span></a> <a class="loc__all" href="#!">адреса магазинов</a> </div>
+          <div class="loc loc--footer"> <a class="loc__current" href="#!">
+<svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg>
+ <span class="loc__text">Самара</span></a> <a class="loc__all" href="#!">адреса магазинов</a> </div>
           <div class="contacts contacts--footer"> ул. Грозненская, 65, <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
-          <div class="socials socials--footer">
-            <a class="socials__item" href="#"> <svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg> </a>
-            <a class="socials__item" href="#"> <svg class="icon icon-od"><use xlink:href="img/sprite.svg#icon-od"></use></svg> </a>
-            <a class="socials__item" href="#"> <svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg> </a>
-            <a class="socials__item" href="#"> <svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg> </a>
-            <a class="socials__item" href="#"> <svg class="icon icon-p"><use xlink:href="img/sprite.svg#icon-p"></use></svg> </a>
-          </div>
+          <div class="socials socials--footer"> <a class="socials__item" href="#">
+<svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+</a> <a class="socials__item" href="#">
+<svg class="icon icon-od"><use xlink:href="img/sprite.svg#icon-od"></use></svg>
+</a> <a class="socials__item" href="#">
+<svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+</a> <a class="socials__item" href="#">
+<svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg>
+</a> <a class="socials__item" href="#">
+<svg class="icon icon-p"><use xlink:href="img/sprite.svg#icon-p"></use></svg>
+</a> </div>
           <div class="footer__dev"> Трудились над сайтом <a class="footer__dev-link" href="#">АКТИКОМ</a> </div>
         </div>
       </div>

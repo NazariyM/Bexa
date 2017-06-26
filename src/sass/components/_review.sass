@@ -1,0 +1,182 @@
+.review
+	padding: 20px 0 60px
+	&__title
+		font-size: 20px
+		line-height: 25px
+		color: #000
+	&__in
+		padding: 25px 0 0
+		+clr
+	&__col
+		float: left
+		&:nth-child(1)
+			margin-right: 40px
+			width: percentage(380 / 1110)
+		&:nth-child(2)
+			margin-right: 28px
+			width: percentage(390 / 1110)
+		&:nth-child(3)
+			width: percentage(272 / 1110)
+		&:not(:first-child)
+			margin-top: 25px
+	&__slider
+		display: none
+		&.slick-initialized
+			display: block
+		&-item
+			padding: 10px
+			border-radius: 5px
+			border: 1px solid #e7e7e7
+			background-color: #fff
+		&-img-wrap
+			position: relative
+			padding-top: 100%
+		&-img
+			+coverdiv
+			+cover
+		&-thumbs
+			display: none
+			margin-top: 10px
+			&.slick-initialized
+				display: block
+			&-item
+				width: 70px
+				height: 70px
+				border-radius: 5px
+				border: 1px solid #e7e7e7
+				background-color: #ffffff
+				cursor: pointer
+				& + &
+					margin-left: 10px
+				&.slick-current
+					border-color: #ed691f
+			&-img-wrap
+				position: relative
+				padding-top: 100%
+			&-img
+				+coverdiv
+				+cover
+				background-size: auto
+	&__data
+		&-text
+			color: #8a8a89
+			line-height: 24px
+			font-size: 15px
+		&-data
+			margin-top: 20px
+			font-size: 16px
+			color: #40403e
+		&-row
+			display: table
+			width: 100%
+			& + &
+				padding-top: 15px
+		&-name
+			padding-right: 2px
+			display: table-cell
+			vertical-align: top
+			text-align: left
+			white-space: nowrap
+		&-dot
+			position: relative
+			width: 100%
+			display: table-cell
+			vertical-align: top
+			text-align: right
+			white-space: nowrap
+			&::after
+				position: absolute
+				left: 0
+				right: 0
+				bottom: 3px
+				height: 0
+				border-bottom: 1px dashed rgba(#3b3b3b, .2)
+				content: ''
+		&-definition
+			padding-left: 6px
+			display: table-cell
+			vertical-align: top
+			text-align: right
+			white-space: nowrap
+	&__info
+		border-radius: 5px
+		border: 1px solid #e7e7e7
+		background-color: #fff
+		&-price
+			position: relative
+			padding: 30px 30px 25px
+			&-old
+				color: #8a8a89
+				font-size: 17px
+				line-height: 25px
+				font-family: $PL
+				text-decoration: line-through
+			&-new
+				font-size: 30px
+				line-height: 25px
+				color: #000
+				font-family: $PEB
+				span
+					display: inline-block
+					vertical-align: middle
+				.icon
+					display: inline-block
+					vertical-align: middle
+					font-size: 20px
+			&-disc
+				position: absolute
+				top: 30px
+				right: 30px
+				padding-right: 10px
+				min-width: 63px
+				height: 28px
+				font-size: 17px
+				color: #000
+				text-transform: uppercase
+				text-align: right
+				line-height: 28px
+				span
+					position: relative
+					z-index: 2
+				.icon
+					+coverdiv
+					fill: #bbe3ff
+			&-buy
+				margin-top: 20px
+			&-stock
+				margin-left: 5px
+				display: inline-block
+				vertical-align: middle
+				width: 70px
+				font-family: $PL
+				font-size: 14px
+				color: #8a8a89
+				line-height: 1.25
+		&-buy
+			font-size: 0
+			&-btn
+				display: inline-block
+				vertical-align: middle
+				text-decoration: none
+				padding: 0 15px
+				&:hover .icon
+					fill: #ed691f
+				.icon
+					fill: #fff
+					display: inline-block
+					vertical-align: text-top
+					transition: fill .2s
+			
+		&-stock
+			padding: 25px 30px
+			background: #f4f4f4
+			font-size: 15px
+			&-label
+				margin-bottom: 15px
+				text-transform: uppercase
+				color: #40403e
+				font-family: $PS
+			&-str
+				color: #8a8a89
+				& + &
+					margin-top: 10px

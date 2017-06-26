@@ -4,4 +4,5 @@
 //=include lib/stepper.min.js
 //=include lib/selectric.js
 //=include components/sliders.js
+//=include components/dropdown.js
 //=include common.js

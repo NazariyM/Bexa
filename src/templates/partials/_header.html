@@ -6,34 +6,38 @@
       </div>
       <div class="header__col">
          <div class="header__top">
-            <div class="header__payment payment">
-               {{ mixins.icon('mc') }}
-               {{ mixins.icon('visa') }}
-            </div>
-            <div class="contacts contacts--header">
-               <span class="contacts__street">ул. Грозненская, 65,</span>
+            <div class="contacts contacts--header header__top-col">
+               <span class="contacts__street">ул. Новозаводская, 2</span>
                <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a>
             </div>
-            <div class="loc loc--header">
-               <a class="loc__current" href="#!">{{ mixins.icon('balloon-sm') }} <span
-                      class="loc__text">Самара</span></a>
-               <a class="loc__all" href="#!">адреса магазинов</a>
+            <div class="header__top-col">
+               <div class="header__city-label">Ваш город:</div>
+               <div class="dropdown js-dropdown dropdown--header">
+                  <div class="dropdown__visible js-dropdown-open">
+                     <div class="dropdown__text">Самара</div>
+                     {{ mixins.icon('balloon-sm') }}</div>
+                  <div class="dropdown__list">
+                     <ul>
+                        <li><a href="#!">Самара</a></li>
+                        <li><a href="#!">Москва</a></li>
+                        <li><a href="#!">Самара</a></li>
+                        <li><a href="#!">Москва</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <a class="header__social-link" href="#!"> {{ mixins.icon('vk') }}</a>
             </div>
-            <div class="userbar userbar--header">
+            <div class="userbar header__top-col">
                <button class="js-menu-btn burger">
                   <span></span>
                </button>
-               <a class="userbar__item" href="#">{{ mixins.icon('user') }}</a>
-               <a class="userbar__item" href="#">
-                  <div class="userbar__count userbar__count--present">1</div>
-                  {{ mixins.icon('box') }}
-               </a>
+               <a class="userbar__item userbar__item--user" href="#"></a>
                <a class="userbar__item" href="#">
                   <div class="userbar__count">3</div>
-                  {{ mixins.icon('heart') }}
+                  {{ mixins.icon('star') }}
                </a>
                <a class="userbar__item" href="#">
-                  <div class="userbar__count">9</div>
+                  <div class="userbar__count userbar__count--cart">9</div>
                   {{ mixins.icon('basket') }}
                </a>
             </div>
@@ -42,12 +46,12 @@
       <div class="header__col">
          <nav class="menu">
             <ul class="menu__list js-menu">
-               <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Веха-клуб</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Каталог товаров</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Доставка и оплата</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Гарантии</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Сотрудничество</a></li>
+               <li class="menu__item"><a class="menu__link" href="#">О магазине</a></li>
                <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
             </ul>
          </nav>
