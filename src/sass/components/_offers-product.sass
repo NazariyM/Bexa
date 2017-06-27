@@ -107,6 +107,8 @@
 		+xs
 			width: 100%
 			max-width: 350px
+		&--product:nth-child(4) ~ &
+			display: none
 	&__col-xs
 		width: (350/1100 * 100%)
 		float: right
@@ -149,6 +151,21 @@
 		+sm
 			margin-top: 10px
 			
+	&__slider
+		display: none
+		margin: 0 -15px
+		&.slick-initialized
+			display: block
+		&-item
+			margin: 0 15px
+		.product__arrow
+			top: calc(50% - 12px)
+		.product__arrow--next
+			right: -20px
+		.product__arrow--prev
+			left: -20px
+			
+	
 	&--home
 		padding-bottom: 60px
 		+sm
@@ -164,6 +181,13 @@
 				width: 50%
 			+xs
 				width: 100%
+		
+	&--product
+		padding: 50px 0 60px
+		.title-lg
+			margin-bottom: 25px
+		.container + .container
+			padding-top: 45px
 		
 // PRODUCTS
 .product
@@ -401,6 +425,10 @@
 			text-align: center
 		+xs
 			padding: 15px 0 30px
+		&--simple
+			padding: 0
+			margin: 17px 0 0
+			border: 0
 	&__buy-btn
 		vertical-align: middle
 		padding: 0 17px
@@ -461,3 +489,4 @@
 		+md
 			width: 100%
 			margin-bottom: 10px
+			

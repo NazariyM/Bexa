@@ -1,5 +1,5 @@
 .review
-	padding: 20px 0 60px
+	padding: 15px 0 55px
 	&__title
 		font-size: 20px
 		line-height: 25px
@@ -18,7 +18,7 @@
 		&:nth-child(3)
 			width: percentage(272 / 1110)
 		&:not(:first-child)
-			margin-top: 25px
+			margin-top: 20px
 	&__slider
 		display: none
 		&.slick-initialized
@@ -67,21 +67,16 @@
 			font-size: 16px
 			color: #40403e
 		&-row
-			display: table
-			width: 100%
+			display: flex
 			& + &
-				padding-top: 15px
+				padding-top: 14px
 		&-name
 			padding-right: 2px
-			display: table-cell
-			vertical-align: top
 			text-align: left
 			white-space: nowrap
 		&-dot
 			position: relative
 			width: 100%
-			display: table-cell
-			vertical-align: top
 			text-align: right
 			white-space: nowrap
 			&::after
@@ -93,18 +88,21 @@
 				border-bottom: 1px dashed rgba(#3b3b3b, .2)
 				content: ''
 		&-definition
+			flex-shrink: 0
 			padding-left: 6px
-			display: table-cell
-			vertical-align: top
-			text-align: right
+			flex-basis: 140px
+			text-align: left
 			white-space: nowrap
 	&__info
+		margin-top: 7px
 		border-radius: 5px
 		border: 1px solid #e7e7e7
 		background-color: #fff
+		&-prices
+			padding-right: 65px
 		&-price
 			position: relative
-			padding: 30px 30px 25px
+			padding: 22px 30px 25px
 			&-old
 				color: #8a8a89
 				font-size: 17px
@@ -172,7 +170,7 @@
 			background: #f4f4f4
 			font-size: 15px
 			&-label
-				margin-bottom: 15px
+				margin-bottom: 10px
 				text-transform: uppercase
 				color: #40403e
 				font-family: $PS

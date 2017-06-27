@@ -3831,7 +3831,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   };
 });
 
-$(document).ready(function () {
+$(function () {
 
   $('.js-screen-sld').slick({
     infinite: true,
@@ -4125,4 +4125,26 @@ $(document).ready(function () {
 
   // custom select
   $('select').selectric();
+
+  // login popup
+  (function () {
+    var $initPopupBtn = $('.js-open-login-popup'),
+        $loginPopup = $initPopupBtn.siblings('.login-popup'),
+        $window = $(window);
+    $initPopupBtn.on('click', function (ev) {
+      ev.preventDefault();
+      ev.stopPropagation();
+      $loginPopup.toggleClass('is-open');
+    });
+    $window.on('click', function () {
+      $loginPopup.fadeOut(500, function () {
+        $(this).removeClass('is-open');
+        $(this).removeAttr('style');
+      });
+    });
+
+    $loginPopup.on('click', function (e) {
+      e.stopPropagation();
+    });
+  })();
 });

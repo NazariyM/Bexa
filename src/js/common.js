@@ -141,6 +141,26 @@ $(document).ready(function () {
 	// custom select
 	$('select').selectric();
 
+	// login popup
+	(function () {
+		const $initPopupBtn = $('.js-open-login-popup'),
+			$loginPopup = $initPopupBtn.siblings('.login-popup'),
+			$window = $(window);
+    $initPopupBtn.on('click', function (ev) {
+			ev.preventDefault();
+      ev.stopPropagation();
+      $loginPopup.toggleClass('is-open');
+    });
+    $window.on('click', () => {
+      $loginPopup.fadeOut(500, function () {
+        $(this).removeClass('is-open');
+        $(this).removeAttr('style');
+      });
+    });
 
+    $loginPopup.on('click', (e) => {
+      e.stopPropagation();
+    });
+  })();
 
 });

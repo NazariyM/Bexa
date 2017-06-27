@@ -31,7 +31,7 @@
                <button class="js-menu-btn burger">
                   <span></span>
                </button>
-               <a class="userbar__item userbar__item--user" href="#"></a>
+               <button class="userbar__item userbar__item--user js-open-login-popup" type="button"></button>
                <a class="userbar__item" href="#">
                   <div class="userbar__count">3</div>
                   {{ mixins.icon('star') }}
@@ -40,6 +40,19 @@
                   <div class="userbar__count userbar__count--cart">9</div>
                   {{ mixins.icon('basket') }}
                </a>
+               <!--begin login popups-->
+               <div class="login-popup">
+                  <a href="#!" class="login-popup__btn btn-border btn-border--white">ВОЙТИ НА САЙТ</a>
+                  <div class="login-popup__enter">
+                     <a class="login-popup__link" href="#!">Регистрация</a>
+                  </div>
+               </div>
+
+               <div class="login-popup" style="display: none">
+                  <div class="login-popup__title">Здравствуйте, <a class="login-popup__link" href="#!">Виталий</a></div>
+                  <a class="login-popup__btn btn-border btn-border--white" href="#!">ВЫЙТИ</a>
+               </div>
+               <!--end login popups-->
             </div>
          </div>
       </div>

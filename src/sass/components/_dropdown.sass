@@ -21,22 +21,16 @@
 		vertical-align: top
 		cursor: pointer
 	&__text
-		padding: 0 13px 3px 0
 		margin-left: 20px
 		+text-overflow
 		font-size: 16px
 		border-bottom: 1px dashed rgba(#000000,.5)
-	.icon-geo
+	.icon-balloon-sm
 		position: absolute
-		top: 2px
-		left: -3px
-		fill: $white
-		+sm
-			top: 0
-			font-size: 16px
-		+xs
-			top: 1px
-			font-size: 19px
+		top: -3px
+		left: 0
+		font-size: 20px
+		pointer-events: none
 	.icon-down
 		position: absolute
 		top: 50%
@@ -76,14 +70,16 @@
 	&--header
 		display: inline-block
 		vertical-align: middle
-		.icon
-			position: absolute
+		.icon-balloon-sm
 			top: -4px
 			left: -95px
-			font-size: 20px
-			pointer-events: none
 		.dropdown__text
 			margin-left: 5px
 			padding: 0
 			color: #000000
 			font-family: $PS
+	&--footer
+		display: inline-block
+		vertical-align: middle
+		.dropdown__text
+			color: #40403e

@@ -37,11 +37,18 @@
 </a> </div>
               <div class="userbar header__top-col"> <button class="js-menu-btn burger">
                   <span></span>
-               </button> <a class="userbar__item userbar__item--user" href="#"></a>
+               </button> <button class="userbar__item userbar__item--user js-open-login-popup" type="button"></button>
                 <a class="userbar__item" href="#">
                   <div class="userbar__count">3</div> <svg class="icon icon-star"><use xlink:href="img/sprite.svg#icon-star"></use></svg> </a>
                 <a class="userbar__item" href="#">
                   <div class="userbar__count userbar__count--cart">9</div> <svg class="icon icon-basket"><use xlink:href="img/sprite.svg#icon-basket"></use></svg> </a>
+                <!--begin login popups-->
+                <div class="login-popup"> <a href="#!" class="login-popup__btn btn-border btn-border--white">ВОЙТИ НА САЙТ</a>
+                  <div class="login-popup__enter"> <a class="login-popup__link" href="#!">Регистрация</a> </div>
+                </div>
+                <div class="login-popup" style="display: none">
+                  <div class="login-popup__title">Здравствуйте, <a class="login-popup__link" href="#!">Виталий</a></div> <a class="login-popup__btn btn-border btn-border--white" href="#!">ВЫЙТИ</a> </div>
+                <!--end login popups-->
               </div>
             </div>
           </div>
@@ -246,7 +253,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__col"> <a class="logo logo--footer" href="#">
-					<img class="logo__img" src="img/logo.png" alt="logo"></a>
+            <img class="logo__img" src="img/logo.png" alt="logo"></a>
           <div class="footer__copyright">Межрегиональная ассоциация «ВЕХА» <br>&copy; 1992 — 2017</div>
         </div>
         <div class="footer__col">
@@ -254,8 +261,8 @@
             <ul>
               <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#">О магазине</a></li>
               <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#">Веха-клуб</a></li>
-              <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#">Каталог товаров</a></li>
-              <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#"> Доставка и оплата</a></li>
+              <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#">Каталог товаров</a> </li>
+              <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#"> Доставка и оплата</a> </li>
             </ul>
             <ul>
               <li class="footer__menu-item"><a class="footer__menu-link border-b-link" href="#">Гарантии</a></li>
@@ -265,21 +272,23 @@
           </div>
         </div>
         <div class="footer__col">
-          <div class="loc loc--footer"> <a class="loc__current" href="#!">
-<svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg>
- <span class="loc__text">Самара</span></a> <a class="loc__all" href="#!">адреса магазинов</a> </div>
-          <div class="contacts contacts--footer"> ул. Грозненская, 65, <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
-          <div class="socials socials--footer"> <a class="socials__item" href="#">
-<svg class="icon icon-vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
-</a> <a class="socials__item" href="#">
-<svg class="icon icon-od"><use xlink:href="img/sprite.svg#icon-od"></use></svg>
-</a> <a class="socials__item" href="#">
-<svg class="icon icon-fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-</a> <a class="socials__item" href="#">
-<svg class="icon icon-in"><use xlink:href="img/sprite.svg#icon-in"></use></svg>
-</a> <a class="socials__item" href="#">
-<svg class="icon icon-p"><use xlink:href="img/sprite.svg#icon-p"></use></svg>
-</a> </div>
+          <div class="footer__row">
+            <div class="dropdown js-dropdown dropdown--footer">
+              <div class="dropdown__visible js-dropdown-open">
+                <div class="dropdown__text">Самара</div> <svg class="icon icon-balloon-sm"><use xlink:href="img/sprite.svg#icon-balloon-sm"></use></svg> </div>
+              <div class="dropdown__list">
+                <ul>
+                  <li><a href="#!">Самара</a></li>
+                  <li><a href="#!">Москва</a></li>
+                  <li><a href="#!">Самара</a></li>
+                  <li><a href="#!">Москва</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__address-link"> <a href="#!" class="link-default">адреса магазинов</a> </div>
+          </div>
+          <div class="contacts contacts--footer"> <span class="contacts__street">ул. Грозненская, 65,</span> <a class="contacts__phone" href="tel:+78462791919">+7 (846) 279-19-19</a> </div>
+          <div class="footer__payment"></div>
           <div class="footer__dev"> Трудились над сайтом <a class="footer__dev-link" href="#">АКТИКОМ</a> </div>
         </div>
       </div>

@@ -22,7 +22,9 @@ h1, h2, h3, h4, h5, h6
 		font-family: $PL
 	&--sb
 		font-family: $PS
-
+	&--lightn
+		font-family: $PL
+		text-transform: none
 .title-md
 	font-size: 25px
 	line-height: 1
@@ -142,7 +144,7 @@ h1, h2, h3, h4, h5, h6
 	&:hover .icon
 		fill: $orange
 	&:active
-		transform: translateY(2px)
+		transform: translateY(1px)
 	.icon
 		display: inline-block
 		vertical-align: middle
@@ -151,6 +153,13 @@ h1, h2, h3, h4, h5, h6
 		padding: 10px 23px
 		color: #005895
 		border-color: #005895
+	&--white
+		padding: 0 22px
+		height: 36px
+		line-height: 36px
+		background: #fff
+		font-size: 13px
+		box-shadow: none
 		
 .btn-edit
 	margin-left: 2px
